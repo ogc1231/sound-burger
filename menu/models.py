@@ -8,4 +8,3 @@ class Menu(models.Model):
     addToOrder = models.BooleanField(default=False)
     last_modified = models.DateTimeField(auto_now=True)
     created = models.DateTimeField(auto_now_add=True)
-
