@@ -17,44 +17,64 @@
             </ul>
         </nav>
     </header>
+    <main>
+        <h2>Menu</h2>
+        <div>
+            <h3>Burgers</h3>
+            <table>
+                {% for burger in burgers %}
+                <tr>
+                    <td>{{ burger.name }}</td>
+                    <td>{{ burger.price }}</td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                {% endfor %}
+            </table>
+            
+        </div>
+        <div>
+            <h3>Sides</h3>
+            <table>
+                {% for side in sides %}
+                <tr>
+                    <td>{{ side.name }}</td>
+                    <td>{{ side.price }}</td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                {% endfor %}
+            </table>
+        </div>
+        <div>
+            <h3>Drinks</h3>
+            <table>
+                {% for drink in drinks %}
+                <tr>
+                    <td>{{ drink.name }}</td>
+                    <td>{{ drink.price }}</td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                {% endfor %}
+            </table>
+        </div>
 
-    <h2>Menu</h2>
-    <div>
-        <h3>Burgers</h3>
-        <table>
-            {% for burger in burgers %}
-            <tr>
-                <td>{{ burger.name }}</td>
-                <td>{{ burger.price }}</td>
-                <td><input type="checkbox"></td>
-            </tr>
-            {% endfor %}
-        </table>
-        
-    </div>
-    <div>
-        <h3>Sides</h3>
-        <table>
-            {% for side in sides %}
-            <tr>
-                <td>{{ side.name }}</td>
-                <td>{{ side.price }}</td>
-                <td><input type="checkbox"></td>
-            </tr>
-            {% endfor %}
-        </table>
-    </div>
-    <div>
-        <h3>Drinks</h3>
-        <table>
-            {% for drink in drinks %}
-            <tr>
-                <td>{{ drink.name }}</td>
-                <td>{{ drink.price }}</td>
-                <td><input type="checkbox"></td>
-            </tr>
-            {% endfor %}
-        </table>
-    </div>
+        <footer class="footer">
+            <ul class="social-links">
+                <li class="social-link"><a class="social-linka" href="https://instagram.com" target="_blank"
+                        rel="noopener noreferrer nofollow" aria-label="Follow us on Instagram (opens in a new tab)"><i
+                            class="fa-brands fa-instagram"></i></a></li>
+                <li class="social-link"><a class="social-linka" href="https://facebook.com" target="_blank"
+                        rel="noopener noreferrer nofollow" aria-label="Follow us on Facebook (opens in a new tab)"><i
+                            class="fa-brands fa-facebook"></i></a></li>
+                <li class="social-link"><a class="social-linka" href="https://twitter.com" target="_blank"
+                        rel="noopener noreferrer nofollow" aria-label="Follow us on Twitter (opens in a new tab)"><i
+                            class="fa-brands fa-twitter"></i></a></li>
+                <li class="social-link"><a class="social-linka" href="https://www.tiktok.com" target="_blank"
+                        rel="noopener noreferrer nofollow" aria-label="Follow us on TikTok (opens in a new tab)"><i
+                            class="fa-brands fa-tiktok"></i></a></li>
+            </ul>
+            <p class="credit">Developed by<a class="credit-link" href="https://github.com/ogc1231" target="_blank"
+                    rel="noopener noreferrer nofollow"> Oliver Craigie</a> 2023</p>
+        </footer>
+    </main>
 </body>
 </html>
