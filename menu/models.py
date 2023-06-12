@@ -6,7 +6,7 @@ STATUS = ((0, "Draft"), (1, "Published"))
 
 
 class Burger(models.Model):
-    name = models.CharField(max_length=100)
+    name = models.CharField(max_length=100, null=False, blank=False)
     desc = models.TextField()
     price = models.FloatField()
     addToOrder = models.BooleanField(default=False)
@@ -22,7 +22,7 @@ class Burger(models.Model):
 
 
 class Side(models.Model):
-    name = models.CharField(max_length=100)
+    name = models.CharField(max_length=100, null=False, blank=False)
     desc = models.TextField()
     price = models.FloatField()
     addToOrder = models.BooleanField(default=False)
@@ -38,7 +38,7 @@ class Side(models.Model):
 
 
 class Drink(models.Model):
-    name = models.CharField(max_length=100)
+    name = models.CharField(max_length=100, null=False, blank=False)
     desc = models.TextField()
     price = models.FloatField()
     addToOrder = models.BooleanField(default=False)
