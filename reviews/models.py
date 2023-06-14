@@ -8,7 +8,7 @@ STATUS = ((0, 'Draft'), (1, 'Published'))
 class Review(models.Model):
     name = models.CharField(max_length=100, default='name')
     author = models.ForeignKey(User, on_delete=models.CASCADE, related_name="posted")
-    content = models.TextField(blank=True)
+    content = models.TextField()
     created = models.DateTimeField(auto_now_add=True)
     updated = models.DateTimeField(auto_now=True)
     status = models.IntegerField(choices=STATUS, default=0)
