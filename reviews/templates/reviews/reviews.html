@@ -73,6 +73,17 @@
 </header>
 
     <main>
+        <div>
+            <h2>Reviews</h2>
+            {% for review in reviews %}
+                <h3>{{ review.name}}</h3>
+                <p>{{ review.content}}</p>
+                <div>
+                    <h5>{{ review.created}}</h5>
+                    <h5>{{ review.updated}}</h5>
+                </div>
+            {% endfor %}
+        </div>
 
         <footer class="footer">
             <div class="content has-text-centered">
