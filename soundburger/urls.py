@@ -16,11 +16,13 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from menu.views import get_menu_list
+from reviews.views import get_review_list
 from home.views import home
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('menu/', get_menu_list, name='get_menu_list'),
+    path('reviews/', get_review_list, name='get_review_list'),
     path('', home, name='home'),
     path('accounts/', include('allauth.urls')),
 ]
