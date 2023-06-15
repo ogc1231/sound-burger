@@ -81,48 +81,69 @@
 
 
     <main>
-      <section class="section has-background-primary">
-        <h2>Menu</h2>
-        <div>
+      <section class="section">
+        <div class="container">
           <h3>Burgers</h3>
-          <table class="container">
-            {% for burger in burgers %}
-            <div class="is-flex has-background-danger tile">
-              <img class="image is-128x128" src="https://codeinstitute.s3.amazonaws.com/fullstack/blog/default.jpg" alt="">
-              <div class="has-background-info">
+          <div class="columns">
+            <div class="column">
+              {% for burger in burgers %}
+              <div class="notification">
+                <img class="image is-128x128" src="https://codeinstitute.s3.amazonaws.com/fullstack/blog/default.jpg" alt="">
                 <h4>{{ burger.name }}</h4>
-                <p>€{{ burger.price }}</p>
+                <p>Desc</p>
+                <div class="is-flex">
+                  <p>€{{ burger.price }}</p>
+                  <button>Add to cart</button>
+                </div>
               </div>
+              {% endfor %}
             </div>
-            {% endfor %}
-            </table>
-            
-        </div>
-        <div>
-            <h3>Sides</h3>
-            <table>
-                {% for side in sides %}
-                <tr>
-                    <td>{{ side.name }}</td>
-                    <td>{{ side.price }}</td>
-                    <td><input type="checkbox"></td>
-                </tr>
-                {% endfor %}
-            </table>
-        </div>
-        <div>
-            <h3>Drinks</h3>
-            <table>
-                {% for drink in drinks %}
-                <tr>
-                    <td>{{ drink.name }}</td>
-                    <td>{{ drink.price }}</td>
-                    <td><input type="checkbox"></td>
-                </tr>
-                {% endfor %}
-            </table>
+          </div>
         </div>
       </section>
+
+      <section class="section">
+        <div class="container">
+          <h3>Sides</h3>
+          <div class="columns">
+            <div class="column">
+              {% for side in sides %}
+              <div class="notification">
+                <img class="image is-128x128" src="https://codeinstitute.s3.amazonaws.com/fullstack/blog/default.jpg" alt="">
+                <h4>{{ side.name }}</h4>
+                <p>Desc</p>
+                <div class="is-flex">
+                  <p>€{{ side.price }}</p>
+                  <button>Add to cart</button>
+                </div>
+              </div>
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <h3>Drinks</h3>
+          <div class="columns">
+            <div class="column">
+              {% for drink in drinks %}
+              <div class="notification">
+                <img class="image is-128x128" src="https://codeinstitute.s3.amazonaws.com/fullstack/blog/default.jpg" alt="">
+                <h4>{{ drink.name }}</h4>
+                <p>Desc</p>
+                <div class="is-flex">
+                  <p>€{{ drink.price }}</p>
+                  <button>Add to cart</button>
+                </div>
+              </div>
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+      </section>
+    
 
         <footer class="footer">
             <div class="content has-text-centered">
