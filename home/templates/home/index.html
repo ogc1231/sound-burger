@@ -18,8 +18,8 @@
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
     
 </head>
-<body>
-    <header>
+<body class="has-background-info">
+    <header class="hero container has-background-grey">
         <nav class="navbar" role="navigation" aria-label="main navigation">
             <div class="navbar-brand">
               <h1><a class="navbar-item" href="{% url 'home' %}">Sound Burger</a><h1>
@@ -72,10 +72,19 @@
             </div>
           </nav>
     </header>
-    <main>
-        <h1>Hellos</h1>
 
-        <footer class="footer">
+
+    <main>
+        <section class="hero-body">
+          <div class="container hero-body has-background-danger">
+            <h2 class="title has-text-centered">Burger</h2>
+            <p class="subtitle has-text-centered ">Tasty</p>
+          </div>
+        </section>
+
+        
+
+        <footer class="has-background-black footer container">
             <div class="content has-text-centered">
                 <div class="is-flex is-justify-content-center" >
                     <a class="px-2" href="https://instagram.com" target="_blank"
