@@ -83,13 +83,14 @@
     <main>
       <section class="section">
         <div class="container">
-          <h3>Burgers</h3>
+          <h2 class="title is-size-2">Menu</h2>
+          <h3 class="title is-size-3">Burgers</h3>
           <div class="columns">
             <div class="column">
               {% for burger in burgers %}
               <div class="notification">
                 <img class="image is-128x128" src="https://codeinstitute.s3.amazonaws.com/fullstack/blog/default.jpg" alt="">
-                <h4>{{ burger.name }}</h4>
+                <h4 class="is-size-4">{{ burger.name }}</h4>
                 <p>Desc</p>
                 <div class="is-flex">
                   <p>€{{ burger.price }}</p>
@@ -104,13 +105,13 @@
 
       <section class="section">
         <div class="container">
-          <h3>Sides</h3>
+          <h3 class="title is-size-3">Sides</h3>
           <div class="columns">
             <div class="column">
               {% for side in sides %}
               <div class="notification">
                 <img class="image is-128x128" src="https://codeinstitute.s3.amazonaws.com/fullstack/blog/default.jpg" alt="">
-                <h4>{{ side.name }}</h4>
+                <h4 class="is-size-4">{{ side.name }}</h4>
                 <p>Desc</p>
                 <div class="is-flex">
                   <p>€{{ side.price }}</p>
@@ -125,13 +126,13 @@
 
       <section class="section">
         <div class="container">
-          <h3>Drinks</h3>
+          <h3 class="title is-size-3">Drinks</h3>
           <div class="columns">
             <div class="column">
               {% for drink in drinks %}
               <div class="notification">
                 <img class="image is-128x128" src="https://codeinstitute.s3.amazonaws.com/fullstack/blog/default.jpg" alt="">
-                <h4>{{ drink.name }}</h4>
+                <h4 class="is-size-4">{{ drink.name }}</h4>
                 <p>Desc</p>
                 <div class="is-flex">
                   <p>€{{ drink.price }}</p>
