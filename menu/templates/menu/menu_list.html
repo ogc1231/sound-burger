@@ -84,9 +84,9 @@
       <section class="section">
         <div class="container">
             <h3 class="title is-size-3">Burgers</h3>
-          <div class="columns ">
+          <div class="columns is-multiline">
           {% for burger in burgers %}
-          <div class="column">
+          <div class="column is-full-mobile is-half-tablet is-half-desktop is-one-quarter-widescreen is-one-quarter-fullhd">
               <div class="notification">
                 <img class="image is-128x128" src="https://codeinstitute.s3.amazonaws.com/fullstack/blog/default.jpg" alt="image">
                 <h4 class="is-size-4">{{ burger.name }}</h4>
@@ -105,9 +105,9 @@
       <section class="section">
         <div class="container">
             <h3 class="title is-size-3">Sides</h3>
-          <div class="columns">
+          <div class="columns is-multiline">
           {% for side in sides %}
-          <div class="column">
+          <div class="column is-full-mobile is-half-tablet is-half-desktop is-one-third-widescreen is-one-third-fullhd">
               <div class="notification">
                 <img class="image is-128x128" src="https://codeinstitute.s3.amazonaws.com/fullstack/blog/default.jpg" alt="image">
                 <h4 class="is-size-4">{{ side.name }}</h4>
@@ -126,9 +126,9 @@
       <section class="section">
         <div class="container">
             <h3 class="title is-size-3">Drinks</h3>
-          <div class="columns">
+          <div class="columns is-multiline">
           {% for drink in drinks %}
-          <div class="column">
+          <div class="column is-full-mobile is-half-tablet is-half-desktop is-one-quarter-widescreen is-one-quarter-fullhd">
               <div class="notification">
                 <img class="image is-128x128" src="https://codeinstitute.s3.amazonaws.com/fullstack/blog/default.jpg" alt="image">
                 <h4 class="is-size-4">{{ drink.name }}</h4>
