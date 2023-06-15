@@ -83,16 +83,12 @@
     <main>
       <section class="section">
         <div class="container">
-          <h2 class="title is-size-2">Menu</h2>
-          <div class="is-flex">
-            <i class="fa-regular fa-burger"></i>
             <h3 class="title is-size-3">Burgers</h3>
-          </div>
-          <div class="columns">
-            <div class="column">
-              {% for burger in burgers %}
+          <div class="columns ">
+          {% for burger in burgers %}
+          <div class="column">
               <div class="notification">
-                <img class="image is-128x128" src="https://codeinstitute.s3.amazonaws.com/fullstack/blog/default.jpg" alt="">
+                <img class="image is-128x128" src="https://codeinstitute.s3.amazonaws.com/fullstack/blog/default.jpg" alt="image">
                 <h4 class="is-size-4">{{ burger.name }}</h4>
                 <p>Desc</p>
                 <div class="is-flex">
@@ -100,21 +96,20 @@
                   <button>Add to cart</button>
                 </div>
               </div>
-              {% endfor %}
             </div>
+            {% endfor %}
           </div>
         </div>
       </section>
 
       <section class="section">
         <div class="container">
-          <i class="fa-regular fa-french-fries"></i>
-          <h3 class="title is-size-3">Sides</h3>
+            <h3 class="title is-size-3">Sides</h3>
           <div class="columns">
-            <div class="column">
-              {% for side in sides %}
+          {% for side in sides %}
+          <div class="column">
               <div class="notification">
-                <img class="image is-128x128" src="https://codeinstitute.s3.amazonaws.com/fullstack/blog/default.jpg" alt="">
+                <img class="image is-128x128" src="https://codeinstitute.s3.amazonaws.com/fullstack/blog/default.jpg" alt="image">
                 <h4 class="is-size-4">{{ side.name }}</h4>
                 <p>Desc</p>
                 <div class="is-flex">
@@ -122,21 +117,20 @@
                   <button>Add to cart</button>
                 </div>
               </div>
-              {% endfor %}
             </div>
+            {% endfor %}
           </div>
         </div>
       </section>
 
       <section class="section">
         <div class="container">
-          <i class="fa-solid fa-cup-straw-swoosh"></i>
-          <h3 class="title is-size-3">Drinks</h3>
+            <h3 class="title is-size-3">Drinks</h3>
           <div class="columns">
-            <div class="column">
-              {% for drink in drinks %}
+          {% for drink in drinks %}
+          <div class="column">
               <div class="notification">
-                <img class="image is-128x128" src="https://codeinstitute.s3.amazonaws.com/fullstack/blog/default.jpg" alt="">
+                <img class="image is-128x128" src="https://codeinstitute.s3.amazonaws.com/fullstack/blog/default.jpg" alt="image">
                 <h4 class="is-size-4">{{ drink.name }}</h4>
                 <p>Desc</p>
                 <div class="is-flex">
@@ -144,8 +138,8 @@
                   <button>Add to cart</button>
                 </div>
               </div>
-              {% endfor %}
             </div>
+            {% endfor %}
           </div>
         </div>
       </section>
