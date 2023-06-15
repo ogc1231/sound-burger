@@ -81,17 +81,20 @@
 
 
     <main>
+      <section class="section has-background-primary">
         <h2>Menu</h2>
         <div>
-            <h3>Burgers</h3>
-            <table>
-                {% for burger in burgers %}
-                <tr>
-                    <td>{{ burger.name }}</td>
-                    <td>{{ burger.price }}</td>
-                    <td><input type="checkbox"></td>
-                </tr>
-                {% endfor %}
+          <h3>Burgers</h3>
+          <table class="container">
+            {% for burger in burgers %}
+            <div class="is-flex has-background-danger tile">
+              <img class="image is-128x128" src="https://codeinstitute.s3.amazonaws.com/fullstack/blog/default.jpg" alt="">
+              <div class="has-background-info">
+                <h4>{{ burger.name }}</h4>
+                <p>€{{ burger.price }}</p>
+              </div>
+            </div>
+            {% endfor %}
             </table>
             
         </div>
@@ -119,6 +122,7 @@
                 {% endfor %}
             </table>
         </div>
+      </section>
 
         <footer class="footer">
             <div class="content has-text-centered">
