@@ -13,6 +13,7 @@ class Burger(models.Model):
     last_modified = models.DateTimeField(auto_now=True)
     created = models.DateTimeField(auto_now_add=True)
     item_image = CloudinaryField('image', default='placeholder')
+    alt = models.CharField(max_length=200)
 
     class Meta:
         ordering = ['created']
