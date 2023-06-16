@@ -32,7 +32,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.environ.get('DEBUG', False)
 
-ALLOWED_HOSTS = ["8000-ogc1231-soundburger-0d8rsc5rwq8.ws-eu98.gitpod.io", "8000-ogc1231-soundburger-0d8rsc5rwq8.ws-eu99.gitpod.io", "soundburger.herokuapp.com", "localhost"]  # noqa
+ALLOWED_HOSTS = ["8000-ogc1231-soundburger-0d8rsc5rwq8.ws-eu98.gitpod.io", "8000-ogc1231-soundburger-0d8rsc5rwq8.ws-eu99.gitpod.io", "8000-ogc1231-soundburger-0d8rsc5rwq8.ws-eu100.gitpod.io", "soundburger.herokuapp.com", "localhost"]  # noqa
 
 
 # Application definition
