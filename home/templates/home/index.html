@@ -27,7 +27,7 @@
               <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
-                <!-- <span aria-hidden="true"></span> -->
+                <span aria-hidden="true"></span>
               </a>
             </div>
           
@@ -44,11 +44,7 @@
                 <a class="navbar-item subtitle" href="#">
                     Order
                   </a>
-                  
-                  <a class="navbar-item subtitle" href="{% url 'get_review_list' %}">
-                    Reviews
-                  </a>
-                  
+                <div></div>
               </div>
           
               <div class="navbar-end">
@@ -59,10 +55,10 @@
                       <strong>Logout</strong>
                     </a>
                     {% else %}
-                    <a class="button is-light" href="{% url 'account_signup' %}">
+                    <a class="button is-rounded is-danger" href="{% url 'account_signup' %}">
                       Sign Up
                     </a>
-                    <a class="button is-light" href="{% url 'account_login' %}">
+                    <a class="button is-rounded is-light" href="{% url 'account_login' %}">
                       Log in
                     </a>
                     {% endif %}
@@ -75,8 +71,8 @@
 
 
     <main>
-      <section class="section">
-        <div class="container hero is-fullheight is-warning">
+      <section>
+        <div class="container hero is-warning is-fullheight-with-navbar">
           <div class="columns is-multiline hero-body">
             <div class="column is-full-mobile is-full-tablet is-half-desktop">
                 <h2 class="title">Enjoy Delicious Burgers</h2>
@@ -92,7 +88,7 @@
 
         
 
-        <footer class="has-background-black footer">
+        <footer class="has-background-light footer">
             <div class="content has-text-centered">
                 <div class="is-flex is-justify-content-center" >
                     <a class="px-2" href="https://instagram.com" target="_blank"
