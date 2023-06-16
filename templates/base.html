@@ -21,63 +21,57 @@
     
 </head>
 
-<body class="d-flex flex-column h-100 main-bg">
+<body>
 
-    <!-- Navigation -->
-
-    <header>
-        <nav class="navbar" role="navigation" aria-label="main navigation">
-            <div class="navbar-brand">
-              <h1><a class="navbar-item" href="{% url 'home' %}">Sound Burger</a><h1>
-          
-              <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <!-- <span aria-hidden="true"></span> -->
+    <header class="hero container">
+      <nav class="navbar" role="navigation" aria-label="main navigation">
+          <div class="navbar-brand">
+            <h1 class="title"><a class="navbar-item" href="{% url 'home' %}">Sound Burger</a><h1>
+        
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+            </a>
+          </div>
+        
+          <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start">
+              <a class="navbar-item subtitle" href="{% url 'home' %}">
+                Home
               </a>
+        
+              <a class="navbar-item subtitle" href="{% url 'get_menu_list' %}">
+                Menu
+              </a>
+
+              <a class="navbar-item subtitle" href="#">
+                  Order
+                </a>
+              <div></div>
             </div>
-          
-            <div id="navbarBasicExample" class="navbar-menu">
-              <div class="navbar-start">
-                <a class="navbar-item" href="{% url 'home' %}">
-                  Home
-                </a>
-          
-                <a class="navbar-item" href="{% url 'get_menu_list' %}">
-                  Menu
-                </a>
-
-                <a class="navbar-item" href="#">
-                    Order
+        
+            <div class="navbar-end">
+              <div class="navbar-item">
+                <div class="buttons">
+                  {% if user.is_authenticated %}
+                  <a class="button is-primary" href="{% url 'account_logout' %}">
+                    <strong>Logout</strong>
                   </a>
-
-                  <a class="navbar-item" href="{% url 'get_review_list' %}">
-                    Reviews
+                  {% else %}
+                  <a class="button is-rounded is-danger" href="{% url 'account_signup' %}">
+                    Sign Up
                   </a>
-                  
-              </div>
-          
-              <div class="navbar-end">
-                <div class="navbar-item">
-                  <div class="buttons">
-                    {% if user.is_authenticated %}
-                    <a class="button is-primary" href="{% url 'account_logout' %}">
-                      <strong>Logout</strong>
-                    </a>
-                    {% else %}
-                    <a class="button is-light" href="{% url 'account_signup' %}">
-                      Sign Up
-                    </a>
-                    <a class="button is-light" href="{% url 'account_login' %}">
-                      Log in
-                    </a>
-                    {% endif %}
-                  </div>
+                  <a class="button is-rounded is-light" href="{% url 'account_login' %}">
+                    Log in
+                  </a>
+                  {% endif %}
                 </div>
               </div>
             </div>
-          </nav>
-    </header>
+          </div>
+        </nav>
+  </header>
 
     <main class="flex-shrink-0 main-bg">
         {% block content %}
