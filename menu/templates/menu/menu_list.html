@@ -93,7 +93,9 @@
                 <p>Desc</p>
                 <div class="is-flex">
                   <p>€{{ burger.price }}</p>
+                  {% if user.is_authenticated %}
                   <button>Add to cart</button>
+                  {% endif %}
                 </div>
               </div>
             </div>
@@ -114,7 +116,9 @@
                 <p>Desc</p>
                 <div class="is-flex">
                   <p>€{{ side.price }}</p>
+                  {% if user.is_authenticated %}
                   <button>Add to cart</button>
+                  {% endif %}
                 </div>
               </div>
             </div>
@@ -135,7 +139,9 @@
                 <p>Desc</p>
                 <div class="is-flex">
                   <p>€{{ drink.price }}</p>
+                  {% if user.is_authenticated %}
                   <button>Add to cart</button>
+                  {% endif %}
                 </div>
               </div>
             </div>
