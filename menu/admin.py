@@ -1,8 +1,6 @@
 from django.contrib import admin
-from .models import Burger
-from .models import Side
-from .models import Drink
+from .models import Food
 
-admin.site.register(Burger)
-admin.site.register(Side)
-admin.site.register(Drink)
+
+admin.site.register(Food)
+
