@@ -1,12 +1,18 @@
 {% extends 'base.html' %}
+
 {% block content %}
+
+<!-- regroup food_list by food_types (burgers, sides, drinks) -->
+{% regroup food_list|dictsort:'food_type' by get_food_type_display as menu_list %}
+
+{% for grouper, menu in menu_list %}
 <section class="section">
   <div class="container">
-    <h3 class="title is-size-3">Burgers</h3>
+    <h3 class="title is-size-3">{{ grouper }}s</h3>
     <div class="columns is-multiline">
-      {% for food in food_list %}
+      {% for food in menu|dictsort:'id' %}
       <div class="column is-full-mobile is-half-tablet is-half-desktop is-one-quarter-widescreen is-one-quarter-fullhd">
-        <div class="notification has-background-primary has-text-black">
+        <div class="notification {% if food.food_type == 'burger' %}has-background-primary has-text-black{% elif food.food_type == 'side' %}has-background-danger has-text-black{% elif food.food_type == 'drink' %}has-background-black has-text-white{% endif %}">
           {% if "placeholder" in food.item_image.url %}
           <img class="image is-128x128"
             src="https://res.cloudinary.com/dlnmcty8k/image/upload/v1686923761/burger-hamburger-cheeseburger-full-nbg_innxx5.png"
@@ -18,11 +24,11 @@
             {% endif %}
           <h4 class="is-size-4">{{ food.name }}</h4>
           
-          <p>Desc</p>
+          <p>{{ food.desc }}</p>
           <div class="is-flex">
-            <p>€{{ food.price }}</p>
+            <p>€{{ food.price|floatformat:2 }}</p>
             {% if user.is_authenticated %}
-            <button class="button is-danger is-rounded is-small">Add to cart</button>
+            <a href="" class="button is-danger is-rounded is-small">Add to cart</a>
             {% endif %}
           </div>
         </div>
@@ -31,50 +37,6 @@
     </div>
   </div>
 </section>
+{% endfor %}
 
-<section class="section">
-  <div class="container">
-    <h3 class="title is-size-3">Sides</h3>
-    <div class="columns is-multiline">
-      <div class="column is-full-mobile is-half-tablet is-half-desktop is-one-third-widescreen is-one-third-fullhd">
-        <div class="notification has-background-danger has-text-black">
-          <img class="image is-128x128"
-            src="https://res.cloudinary.com/dlnmcty8k/image/upload/v1686923761/burger-hamburger-cheeseburger-full-nbg_innxx5.png"
-            alt="image">
-          <h4 class="is-size-4">{{ side.name }}</h4>
-          <p>Desc</p>
-          <div class="is-flex">
-            <p>€{{ side.price }}</p>
-            {% if user.is_authenticated %}
-            <button>Add to cart</button>
-            {% endif %}
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="section">
-  <div class="container">
-    <h3 class="title is-size-3">Drinks</h3>
-    <div class="columns is-multiline ">
-      <div class="column is-full-mobile is-half-tablet is-half-desktop is-one-quarter-widescreen is-one-quarter-fullhd">
-        <div class="notification has-background-black has-text-white">
-          <img class="image is-128x128"
-            src="https://res.cloudinary.com/dlnmcty8k/image/upload/v1686923761/burger-hamburger-cheeseburger-full-nbg_innxx5.png"
-            alt="image">
-          <h4 class="is-size-4">{{ drink.name }}</h4>
-          <p>Desc</p>
-          <div class="is-flex">
-            <p>€{{ drink.price }}</p>
-            {% if user.is_authenticated %}
-            <button>Add to cart</button>
-            {% endif %}
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
 {% endblock content %}
