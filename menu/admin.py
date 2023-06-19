@@ -3,4 +3,3 @@ from .models import Food
 
 
 admin.site.register(Food)
-
