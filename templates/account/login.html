@@ -8,28 +8,26 @@
 
 {% block content %}
 
-<div class="container">
-    <div class="row">
-        <div class="col-12">
-            <h3>{% trans "Sign In" %}</h3>
+<div class="section has-background-warning mx-auto">
+    <div class="columns is-flex-direction-column">
+        <div class="column is-one-fifth mx-auto" style="border-style: solid solid none solid;" >
+            <h3 class="title is-3">{% trans "Taste Your Future" %}</h3>
 
-            <p>{% blocktrans %}Welcome back to the SoundBurger. To order please log in. If
-                you
-                do not have an account yet, then <a class="" href="{{ signup_url }}">sign up</a>
+            <p class="subtitle is-5">{% blocktrans %}If you are new please <a class="" href="{{ signup_url }}">sign up</a>
                 first.{% endblocktrans %}</p>
         </div>
-    </div>
-    <div class="row mx-auto d-flex justify-content-center">
-        <div class="col-12 col-md-8 col-lg-6">
+        <div class="column is-one-fifth mx-auto" style="border-style: none solid solid solid;">
             <form class="" method="POST" action="{% url 'account_login' %}">
                 {% csrf_token %}
                 {{ form|crispy }}
                 {% if redirect_field_value %}
                 <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
                 {% endif %}
-                <button class="button is-medium is-rounded is-danger" type="submit">{% trans "Sign In" %}</button>
+                <button class="button is-medium is-rounded is-danger" type="submit">{% trans "Log In" %}</button>
+                <p><a class="" href="{% url 'account_reset_password' %}">{% trans "Forgot Password?" %}</a></p>
             </form>
         </div>
     </div>
 </div>
+
 {% endblock %}
