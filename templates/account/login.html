@@ -2,14 +2,15 @@
 
 {% load i18n %}
 {% load account socialaccount %}
+{% load crispy_forms_tags %}
 
 {% block head_title %}{% trans "Sign In" %}{% endblock %}
 
 {% block content %}
 
-<div class="">
-    <div class="">
-        <div class="">
+<div class="container">
+    <div class="row">
+        <div class="col-12">
             <h3>{% trans "Sign In" %}</h3>
 
             <p>{% blocktrans %}Welcome back to the SoundBurger. To order please log in. If
@@ -18,11 +19,11 @@
                 first.{% endblocktrans %}</p>
         </div>
     </div>
-    <div class="">
-        <div class="">
+    <div class="row mx-auto d-flex justify-content-center">
+        <div class="col-12 col-md-8 col-lg-6">
             <form class="" method="POST" action="{% url 'account_login' %}">
                 {% csrf_token %}
-                {{ form.as_p }}
+                {{ form|crispy }}
                 {% if redirect_field_value %}
                 <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
                 {% endif %}
@@ -31,29 +32,4 @@
         </div>
     </div>
 </div>
-
-<div class="field">
-    <label class="label">Username</label>
-    <div class="control has-icons-left has-icons-right">
-      <input class="input is-success" type="text" placeholder="Example: jsmith" value="">
-      <span class="icon is-small is-left">
-        <i class="fas fa-user"></i>
-      </span>
-      <span class="icon is-small is-right">
-        <i class="fas fa-check"></i>
-      </span>
-    </div>
-  </div>
-  
-  <div class="field">
-    <label class="label">Password</label>
-    <p class="control has-icons-left">
-      <input class="input" type="password" placeholder="Password">
-      <span class="icon is-small is-left">
-        <i class="fas fa-lock"></i>
-      </span>
-    </p>
-  </div>
-  
-
 {% endblock %}
