@@ -7,3 +7,8 @@ body {
 h1, h2, h3, h4, button {
     font-family: 'Baloo Tamma 2', cursive;
 }
+
+.notification {
+    border: 2px solid black;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
