@@ -7,25 +7,25 @@
 
 {% for grouper, menu in menu_list %}
 <section class="section">
-  <div class="container">
+  <div class="container has-text-centered">
     <h3 class="title is-size-3">{{ grouper }}s</h3>
     <div class="columns is-multiline">
       {% for food in menu|dictsort:'id' %}
       <div class="column is-full-mobile is-half-tablet is-half-desktop is-one-quarter-widescreen is-one-quarter-fullhd">
         <div class="notification {% if food.food_type == 'burger' %}has-background-primary has-text-black{% elif food.food_type == 'side' %}has-background-danger has-text-black{% elif food.food_type == 'drink' %}has-background-black has-text-white{% endif %}">
           {% if "placeholder" in food.item_image.url %}
-          <img class="image is-128x128"
+          <img class="image is-128x128 mx-auto" 
             src="https://res.cloudinary.com/dlnmcty8k/image/upload/v1686923761/burger-hamburger-cheeseburger-full-nbg_innxx5.png"
             alt="{{ food.name }}">
           {% else %}
-          <img class="image is-128x128"
+          <img class="image is-128x128 mx-auto"
             src="{{ food.item_image.url }}"
             alt="{{ food.name }}">
             {% endif %}
           <h4 class="is-size-4">{{ food.name }}</h4>
           
           <p>{{ food.desc }}</p>
-          <div class="is-flex">
+          <div class="is-flex-direction-column is-justify-content-space-evenly">
             <p>€{{ food.price|floatformat:2 }}</p>
             {% if user.is_authenticated %}
             <a href="" class="button is-danger is-rounded is-small">Add to cart</a>
