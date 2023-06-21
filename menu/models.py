@@ -20,12 +20,3 @@ class Food(models.Model):
 
     def __str__(self):
         return self.name
-  
-
-class OrderModel(models.Model):
-    created_on = models.CharField(max_length=100)
-    price = models.FloatField()
-    items = models.ManyToManyField('Food', related_name='order', blank=True)
-
-    def __str__(self):
-        return f'Order: {self.created_on.strftime("%b %d %I: %M %p")}'
