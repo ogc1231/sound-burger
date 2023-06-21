@@ -20,9 +20,9 @@ class Food(models.Model):
 
     def __str__(self):
         return self.name
-        
+  
 
-class Order(models.Model):
+class OrderModel(models.Model):
     created_on = models.CharField(max_length=100)
     price = models.FloatField()
     items = models.ManyToManyField('Food', related_name='order', blank=True)
