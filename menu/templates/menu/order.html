@@ -8,7 +8,7 @@
             <form method="POST">
                 {% csrf_token %}
                 <div class="pt-5">
-                    {% for app in appetizers %}
+                    {% for burger in burgers %}
                     <div class="row">
                         <div class="col-md-2 col-sm-12">
                             <img class="rounded" src="{{ app.image.url }}" width="150" height="100" />
@@ -17,11 +17,11 @@
                             <div class="d-flex flex-row">
                                 <div class="form-group form-check">
                                     <input type="checkbox" name="items[]" class="form-check-input" value="{{ app.pk }}">
-                                    <label class="form-check-label">{{ app.name }}</label>
+                                    <label class="form-check-label">{{ burger.name }}</label>
                                 </div>
-                                <p class="font-weight-bold pl-5">{{ app.price }}</p>
+                                <p class="font-weight-bold pl-5">{{ burger.price }}</p>
                             </div>
-                            <p>{{ app.description }}</p>
+                            <p>{{ burger.description }}</p>
                         </div>
                     </div>
                     <hr />
@@ -29,7 +29,7 @@
                 </div>
 
                 <div class="pt-5">
-                    {% for entre in entres %}
+                    {% for side in sides %}
                     <div class="row mt-4">
                         <div class="col-md-2 col-sm-12">
                             <img class="rounded" src="{{ entre.image.url }}" width="150" height="100" />
@@ -39,33 +39,11 @@
                                 <div class="form-group form-check">
                                     <input type="checkbox" name="items[]" class="form-check-input"
                                         value="{{ entre.pk }}">
-                                    <label class="form-check-label">{{ entre.name }}</label>
+                                    <label class="form-check-label">{{ side.name }}</label>
                                 </div>
-                                <p class="font-weight-bold pl-5">{{ entre.price }}</p>
+                                <p class="font-weight-bold pl-5">{{ side.price }}</p>
                             </div>
-                            <p>{{ entre.description }}</p>
-                        </div>
-                    </div>
-                    <hr />
-                    {% endfor %}
-                </div>
-
-                <div class="pt-5">
-                    {% for dessert in desserts %}
-                    <div class="row mt-4">
-                        <div class="col-md-2 col-sm-12">
-                            <img class="rounded" src="{{ dessert.image.url }}" width="150" height="100" />
-                        </div>
-                        <div class="col-md-8 col-sm-12">
-                            <div class="d-flex flex-row">
-                                <div class="form-group form-check">
-                                    <input type="checkbox" name="items[]" class="form-check-input"
-                                        value="{{ dessert.pk }}">
-                                    <label class="form-check-label">{{ dessert.name }}</label>
-                                </div>
-                                <p class="font-weight-bold pl-5">{{ dessert.price }}</p>
-                            </div>
-                            <p>{{ dessert.description }}</p>
+                            <p>{{ side.description }}</p>
                         </div>
                     </div>
                     <hr />
@@ -76,13 +54,13 @@
                     {% for drink in drinks %}
                     <div class="row mt-4">
                         <div class="col-md-2 col-sm-12">
-                            <img class="rounded" src="{{ drink.image.url }}" width="150" height="100" />
+                            <img class="rounded" src="{{ dessert.image.url }}" width="150" height="100" />
                         </div>
                         <div class="col-md-8 col-sm-12">
                             <div class="d-flex flex-row">
                                 <div class="form-group form-check">
                                     <input type="checkbox" name="items[]" class="form-check-input"
-                                        value="{{ drink.pk }}">
+                                        value="{{ dessert.pk }}">
                                     <label class="form-check-label">{{ drink.name }}</label>
                                 </div>
                                 <p class="font-weight-bold pl-5">{{ drink.price }}</p>
