@@ -10,3 +10,7 @@ class PostAdmin(SummernoteModelAdmin):
     prepopulated_fields = {'slug': ('title',)}
     list_filter = ('is_public', 'created')
     summernote_fields = ('content')
+    actions = ['approve_reviews']
+
+    def approve_reviews(self, request, queryset):
+        queryset.update(is_public=True)
