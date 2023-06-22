@@ -8,30 +8,30 @@
 
 
 
-  <div class="container-fluid">
-    <div class="row">
-        <div class="col-12 mt-3 left">
-            <div class="row">
+  <div>
+    <div>
+        <div>
+            <div>
                 {% for review in review_list %}
-                <div class="col-md-4">
-                    <div class="card mb-4">
-                        <div class="card-body">
-                                <h2 class="card-title">{{ review.title }}</h2>
+                <div>
+                    <div>
+                        <div>
+                                <h2>{{ review.title }}</h2>
                                 <p>By: {{ review.author }}</p>
                                 <h2>{{ review.content }}</h2>
 
-                            <p class="card-text text-muted h6">Created: {{ review.created }}</p>
-                            <p class="card-text text-muted h6">Updated: {{ review.updated }}</p>
+                            <p>Created: {{ review.created }}</p>
+                            <p>Updated: {{ review.updated }}</p>
                         </div>
                     </div>
                 </div>
                 {% if forloop.counter|divisibleby:3 %}
             </div>
-            <!-- <div class="row">
+            <div>
                 {% endif %}
                 {% endfor %}
 
-            </div> -->
+            </div>
         </div>
     </div>
         <a href="{% url 'add_review' %}">Add a review</a>
