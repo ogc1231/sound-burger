@@ -7,7 +7,7 @@
 {% block content %}
 
 <div>
-    <form method="POST">
+    <form method="POST" action="">
         {% csrf_token %}
         <div>
             <p>
@@ -22,7 +22,7 @@
             </p>
         </div>
         <div>
-            <button type="submit">Sumbit Review</button>
+            <button type="submit">Submit Review</button>
         </div>
     </form>
 </div>
