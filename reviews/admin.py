@@ -5,9 +5,9 @@ from django_summernote.admin import SummernoteModelAdmin
 
 @admin.register(Review)
 class PostAdmin(SummernoteModelAdmin):
-    list_display = ('title', 'slug', 'is_public', 'created')
+    # list_display = ('title', 'slug', 'is_public', 'created')
     search_fields = ['title', 'content']
-    prepopulated_fields = {'slug': ('title',)}
+    # prepopulated_fields = {'slug': ('title',)}
     list_filter = ('is_public', 'created')
     summernote_fields = ('content')
     actions = ['approve_reviews']
