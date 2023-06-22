@@ -1,12 +1,29 @@
 from django.shortcuts import render
+# from django.views import generic
 from .models import Review
-from .forms import ReviewForm
 
+
+# class ReviewList(generic.ListView):
+#     model = Review
+#     queryset = Review.objects.filter(is_public=True).order_by('created')
+#     template_name = 'index.html'
+#     paginate_by = 12
 
 def get_review_list(request):
-    reviews = Review.objects.all()
+    review_list = Review.objects.all
+    queryset = Review.objects.filter(is_public=True).order_by('created')
+    paginate_by = 12
+
     context = {
-        'reviews': reviews,
-        'review_form': ReviewForm()
+        'review_list': review_list,
     }
     return render(request, 'reviews/reviews.html', context)
+
+# def get_menu_list(request):
+#     food_list = Food.objects.all()
+
+#     context = {
+#         'food_list': food_list,
+#     }
+#     return render(request, 'menu/menu_list.html', context)
+
