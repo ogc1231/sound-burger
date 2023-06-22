@@ -21,6 +21,7 @@ from home.views import home
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('summernote/', include('django_summernote.urls')),
     path('menu/', get_menu_list, name='get_menu_list'),
     path('reviews/', get_review_list, name='get_review_list'),
     path('', home, name='home'),
