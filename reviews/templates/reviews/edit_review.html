@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+{% load i18n %}
+{% load account socialaccount %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+
+<div>
+    <h1>Edit Review</h1>
+    <form method="POST" action="">
+        {% csrf_token %}
+        {{ form|crispy }}
+        <!-- <div>
+            <p>
+                <label for="title">Review Heading</label>
+                <input type="text" name="title" id="title">
+            </p>
+        </div>
+        <div>
+            <p>
+                <label for="content">Review Body</label>
+                <textarea type="textarea" rows="4" cols="50" name="content" id="content"></textarea>
+
+            </p>
+        </div> -->
+        <div>
+            <button type="submit">Update Review</button>
+        </div>
+    </form>
+</div>
+
+
+{% endblock content %}
