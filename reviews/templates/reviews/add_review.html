@@ -9,7 +9,8 @@
 <div>
     <form method="POST" action="">
         {% csrf_token %}
-        <div>
+        {{ form|crispy }}
+        <!-- <div>
             <p>
                 <label for="title">Review Heading</label>
                 <input type="text" name="title" id="title">
@@ -21,7 +22,7 @@
                 <textarea type="textarea" rows="4" cols="50" name="content" id="content"></textarea>
 
             </p>
-        </div>
+        </div> -->
         <div>
             <button type="submit">Submit Review</button>
         </div>
