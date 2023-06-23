@@ -16,7 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from menu.views import get_menu_list
-from reviews.views import get_review_list, add_review
+from reviews.views import get_review_list, add_review, edit_review
 from home.views import home
 
 urlpatterns = [
@@ -25,6 +25,7 @@ urlpatterns = [
     path('menu/', get_menu_list, name='get_menu_list'),
     path('reviews/', get_review_list, name='get_review_list'),
     path('add/', add_review, name='add_review'),
+    path('edit/<review_id>', edit_review, name='edit_review'),
     path('', home, name='home'),
     path('accounts/', include('allauth.urls')),
 ]
