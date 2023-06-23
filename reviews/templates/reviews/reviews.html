@@ -19,10 +19,16 @@
                             <h2>{{ review.title }}</h2>
                             <p>By: {{ review.author }}</p>
                             <h2>{{ review.content }}</h2>
-                            <a href="/edit/{{ review.id }}">Edit</a>
+                            
                             <p>Created: {{ review.created }}</p>
                             <p>Updated: {{ review.updated }}</p>
                         </div>
+                        {% if user.is_authenticated %}
+                        <div>
+                            <a href="/edit/{{ review.id }}">Edit</a>
+                            <a href="/delete/{{ review.id }}">Delete</a>
+                        </div>
+                        {% endif %}
                     </div>
                 </div>
                 {% if forloop.counter|divisibleby:3 %}
@@ -34,7 +40,9 @@
             </div>
         </div>
     </div>
+        {% if user.is_authenticated %}
         <a href="{% url 'add_review' %}">Add a review</a>
+        {% endif %}
         <!-- {% if user.is_authenticated %}
 
         <h3>Leave a review:</h3>
