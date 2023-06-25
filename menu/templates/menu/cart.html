@@ -2,6 +2,21 @@
 
 {% block content %}
 
+<h1>Cart</h1>
+<div>Items: {{ order.get_cart_item }}</div>
+<div>Total: €{{ order.get_cart_total|floatformat:2 }}</div>
+{% for item in items %}
+<img src="{{ item.product.imageURL }}" alt="">
+<div>{{ item.product.name }}</div>
+<div>€{{ item.product.price|floatformat:2 }}</div>
+<div>{{ item.quantity }}</div>
+
+<div>€{{ item.get_total|floatformat:2 }}</div>
+
+{% endfor %}
+
+
+
 <a class="button" type="button" href="{ url 'checkout' }">Checkout</a>
 
 {% endblock content %}
