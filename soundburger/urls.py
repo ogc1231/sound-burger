@@ -30,5 +30,5 @@ urlpatterns = [
     path('edit/<review_id>', edit_review, name='edit_review'),
     path('delete/<review_id>', delete_review, name='delete_review'),
     path('', home, name='home'),
-    # path('accounts/', include('allauth.urls')),
+    path('accounts/', include('allauth.urls')),
 ]
