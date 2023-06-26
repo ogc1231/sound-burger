@@ -108,11 +108,15 @@
                     </tr>
                 </tbody>
                 {% endfor %}
+                <tfoot>
+                    <tr>
+                        <th>Items: {{ order.get_cart_items }}</th>
+                        <th></th>
+                        <th></th>
+                        <th>€{{ order.get_cart_total|floatformat:2 }}</th>
+                    </tr>
+                </tfoot>
             </table>
-
-
-            <div>Items: {{ order.get_cart_items }}</div>
-            <div>Total: {{ order.get_cart_total|floatformat:2 }}</div>
             <a class="button" type="button" href="{% url 'cart' %}">Return to cart</a>
         </div>
     </div>
