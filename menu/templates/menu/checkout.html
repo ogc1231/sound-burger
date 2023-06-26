@@ -103,7 +103,7 @@
                     <tr>
                         <th>{{ item.product.name }}</th>
                         <th>€{{ item.product.price|floatformat:2 }}</th>
-                        <th><button class="button">-</button>{{ item.quantity }}<button class="button">+</button></th>
+                        <th>{{ item.quantity }}</th>
                         <th>€{{ item.get_total|floatformat:2 }}</th>
                     </tr>
                 </tbody>
