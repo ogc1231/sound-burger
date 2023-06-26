@@ -28,7 +28,6 @@ def cart(request):
 
 
 def checkout(request):
-    
     if request.user.is_authenticated:
         customer = request.user.customer
         order, created = Order.objects.get_or_create(customer=customer, complete=False)
@@ -43,4 +42,11 @@ def checkout(request):
 
 
 def updateItem(request):
+    data = json.loads(request.body)
+    productId = data['productId']
+    action = data['action']
+    print('Action:', action)
+    print('Product:', productId)
     return JsonResponse('Item was added', safe=False)
+    
+
