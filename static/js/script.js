@@ -13,5 +13,23 @@ for(let i =0; i < updateButtons.length; i++){
 }
 
 function updateUserCart(productId, action){
-    console("User is logged in")
+    console.log("User is logged in")
+
+    let url = "/update_item/"
+
+    fetch(url, {
+        method:"POST",
+        headers:{
+            "Content-Type":"application/json"
+        },
+        body:JSON.stringify({"productId":productId, "action":action})
+    })
+
+    .then((response) =>{
+        return response.json()
+    })
+
+    .then((data) =>{
+        console.log("data:", data)
+    })
 }
