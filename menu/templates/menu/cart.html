@@ -2,33 +2,39 @@
 
 {% block content %}
 
-<section class="container">
-    <h2>Cart</h2>
-    <div>Items: {{ order.get_cart_items }}</div>
-    <div>Total: €{{ order.get_cart_total|floatformat:2 }}</div>
-    
-    <table class="table">
-        <thead>
-            <tr>
-                <th>Item</th>
-                <th>Price</th>
-                <th>Quantity</th>
-                <th>Total</th>
-            </tr>
-        </thead>
-        {% for item in items %}
-        <tbody>
-            <tr>
-                <th>{{ item.product.name }}</th>
-                <th>€{{ item.product.price|floatformat:2 }}</th>
-                <th><button class="button">-</button>{{ item.quantity }}<button class="button">+</button></th>
-                <th>€{{ item.get_total|floatformat:2 }}</th>
-            </tr>
-        </tbody>
-        {% endfor %}
-    </table>
-    
-    <a class="button" type="button" href="{% url 'checkout' %}">Checkout</a>
+<section class="columns">
+    <div class="container column is-one-quarter">
+        <h2>Cart</h2>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            {% for item in items %}
+            <tbody>
+                <tr>
+                    <th>{{ item.product.name }}</th>
+                    <th>€{{ item.product.price|floatformat:2 }}</th>
+                    <th><button class="button">-</button>{{ item.quantity }}<button class="button">+</button></th>
+                    <th>€{{ item.get_total|floatformat:2 }}</th>
+                </tr>
+            </tbody>
+            {% endfor %}
+            <tfoot>
+                <tr>
+                    <th>Items: {{ order.get_cart_items }}</th>
+                    <th></th>
+                    <th></th>
+                    <th>€{{ order.get_cart_total|floatformat:2 }}</th>
+                </tr>
+            </tfoot>
+        </table>
+        <a class="button" type="button" href="{% url 'checkout' %}">Checkout</a>
+    </div>
 </section>
 
 
