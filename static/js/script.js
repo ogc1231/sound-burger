@@ -28,9 +28,11 @@ function updateUserCart(productId, action){
 
     .then((response) =>{
         return response.json()
+        // return console.log(response)
     })
 
     .then((data) =>{
         console.log('data:', data)
+        // location.reload()
     })
 }
