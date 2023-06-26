@@ -8,5 +8,10 @@ for(let i =0; i < updateButtons.length; i++){
         console.log("ProductId:", productId, "action:", action)
 
         console.log("USER:", user)
+        updateUserCart()
     })
+}
+
+function updateUserCart(productId, action){
+    console("User is logged in")
 }
