@@ -28,7 +28,7 @@
           <div class="is-flex-direction-column is-justify-content-space-evenly">
             <p class="pt-1">€{{ food.price|floatformat:2 }}</p>
             {% if user.is_authenticated %}
-            <button class="button is-danger is-rounded is-normal mt-2" id="add-to-cart" value="{{ food.id }}">Add to cart</button>
+            <button data-product="{{ product.id }}" data-action="add" class="button is-danger is-rounded is-normal mt-2" id="add-to-cart" value="{{ food.id }}">Add to cart</button>
             {% endif %}
           </div>
         </div>
