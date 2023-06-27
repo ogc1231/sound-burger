@@ -29,7 +29,7 @@
           <a class="navbar-item" href="{% url 'home' %}">SoundBurger</a>
         <h1>
 
-        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+        <a role="button" class="navbar-burger" id="burger-menu" aria-label="menu" aria-expanded="false"
           data-target="navbarBasicExample">
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
@@ -37,7 +37,7 @@
         </a>
       </div>
 
-      <div id="navbarBasicExample" class="navbar-menu">
+      <div class="navbar-menu" id="nav-links">
         <div class="navbar-start">
           <a class="navbar-item subtitle" href="{% url 'home' %}">
             Home
@@ -60,7 +60,7 @@
           <div></div>
         </div>
 
-        <div class="dropdown is-right">
+        <!-- <div class="dropdown is-right">
           <div class="dropdown-trigger">
             <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
               <i class="fa-solid fa-bars has-text-right"></i>
@@ -91,7 +91,7 @@
               {% endif %}
             </div>
           </div>
-        </div>
+        </div> -->
 
         <div class="navbar-end">
           <div class="navbar-item">
