@@ -46,23 +46,25 @@ def checkout(request):
 
 def addItem(request, menu_id):
     """ Add a menu item to the cart """
-    food = get_object_or_404(Food, id=menu_id)
-    customer = request.user
+    food = get_object_or_404(Food, id=menu_id)  # the food item
+    customer = request.user  # the user
+    # create a new order for this user, if none found
     order, created = Order.objects.get_or_create(
         customer=customer, complete=False
     )
-    existing_order_item = OrderItem.objects.filter(order=order, product=food).first()
-    print(existing_order_item)
-    print("---")
-    if existing_order_item:
-        quantity = existing_order_item.quantity + 1
-        order_item = OrderItem.objects.create(
-            product=food, order=order, quantity=quantity
-        )
-    else:
+    # check for an existing food item on this user's specific order
+    existing_order_item = OrderItem.objects.filter(
+        order=order, product=food).first()
+    # if no matching food item, create a new instance of the order-item
+    if existing_order_item is None:
         order_item = OrderItem.objects.create(
             product=food, order=order, quantity=1
         )
+    else:
+        # existing food on this order was found, increment the quantity by +1
+        existing_order_item.quantity += 1
+        # save the changes to the DB
+        existing_order_item.save()
     return redirect(reverse('cart'))
 
 
@@ -74,3 +76,19 @@ def updateItem(request):
     print('action:', action)
     print('productsId', productId)
     return JsonResponse('Item was added', safe=False)
+
+
+def deleteItem(request, menu_id):
+    """ Removes an item from user's cart """
+    food = get_object_or_404(Food, id=menu_id)  # the food item
+    customer = request.user  # the user
+    # get the user's non-completed order
+    order = get_object_or_404(Order, customer=customer, complete=False)
+    # get the existing food item on this user's specific order
+    existing_order_item = OrderItem.objects.filter(
+        order=order, product=food).first()
+    # if no matching food item, create a new instance of the order-item
+    if existing_order_item is not None:
+        # existing food on this order was found, delete it
+        existing_order_item.delete()
+    return redirect(reverse('cart'))
