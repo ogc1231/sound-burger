@@ -13,7 +13,7 @@ class FoodAdmin(admin.ModelAdmin):
 
 @admin.register(Order)
 class OrderAdmin(admin.ModelAdmin):
-    list_display = ("customer", "complete")
+    list_display = ("customer", "id", "complete")
 
 
 @admin.register(OrderItem)
