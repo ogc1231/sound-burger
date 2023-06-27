@@ -55,7 +55,6 @@ INSTALLED_APPS = [
     'crispy_bulma',
     'home',
     'menu',
-    'ordering',
     'reviews',
 ]
 
