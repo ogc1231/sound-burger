@@ -72,7 +72,7 @@
           {% if user.is_authenticated %}
           <a class="navbar-item subtitle" href="{% url 'cart' %}">
             <i class="bi bi-basket"></i>
-            <p class="cart-num mb-4 is-size-6 has-background-black has-text-white  ">0</p>
+            <p class="cart-num mb-4 is-size-6 has-background-black has-text-white" id="cart-num">0</p>
           </a>
 
           {% endif %}
