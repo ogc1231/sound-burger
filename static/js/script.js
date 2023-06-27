@@ -8,7 +8,7 @@ for(let i = 0; i < updateButtons.length; i++){
         console.log('productId:', productId, 'action:', action)
 
         console.log('USER:', user)
-        updateUserCart()
+        // updateUserCart()
     })
 }
 
