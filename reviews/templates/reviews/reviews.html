@@ -26,16 +26,16 @@
                         {{ review.content }}
                         <br class="mb-4">
                         <time class="subtitle is-size-6">
-                            {% if review.created == review.updated %}
-                            <p>Created: {{ review.created }}</p>
+                            {% if review.created|date:"U" == review.updated|date:"U" %}
+                                <p>Created: {{ review.created|date:"F d, Y @ H:m" }}</p>
                             {% else %}
-                            <p>Updated: {{ review.updated }}</p>
+                                <p>Updated: {{ review.updated|date:"F d, Y @ H:m" }}</p>
                             {% endif %}
                         </time>
-                        {% if user.is_authenticated %}
+                        {% if request.user == review.author %}
                         <div>
-                            <a href="/edit/{{ review.id }}">Edit</a> |
-                            <a href="/delete/{{ review.id }}">Delete</a>
+                            <a href="{% url 'edit_review' review.id %}">Edit</a> |
+                            <a href="{% url 'delete_review' review.id %}">Delete</a>
                         </div>
                         {% endif %}
                     </div>
