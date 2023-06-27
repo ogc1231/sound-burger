@@ -10,28 +10,35 @@
 <section class="container">
     <div class="columns is-multiline">
         {% for review in review_list %}
-        <div class="notification column is-one-third">
-            <div>
-                <div>
-                    <h2>{{ review.title }}</h2>
-                    <p>By: {{ review.author }}</p>
-                    <h2>{{ review.content }}</h2>
-
-                    {% if review.created == review.updated %}
-                    <p>Created: {{ review.created }}</p>
-                    {% else %}
-                    <p>Updated: {{ review.updated }}</p>
-                    {% endif %}
+        <div class="column is-one-third">
+            <div class="card">
+                <div class="card-content">
+                    <div class="media">
+                        <div class="media-content">
+                            <p class="title is-4">{{ review.title }}</p>
+                            <p class="subtitle is-6">By: {{ review.author }}</p>
+                        </div>
+                    </div>
+                    <div class="content">
+                        {{ review.content }}
+                        <br>
+                        <time>
+                            {% if review.created == review.updated %}
+                            <p>Created: {{ review.created }}</p>
+                            {% else %}
+                            <p>Updated: {{ review.updated }}</p>
+                            {% endif %}
+                        </time>
+                        {% if user.is_authenticated %}
+                        <div>
+                            <a href="/edit/{{ review.id }}">Edit</a> |
+                            <a href="/delete/{{ review.id }}">Delete</a>
+                        </div>
+                        {% endif %}
+                    </div>
                 </div>
-                {% if user.is_authenticated %}
-                <div>
-                    <a href="/edit/{{ review.id }}">Edit</a>
-                    <a href="/delete/{{ review.id }}">Delete</a>
-                </div>
-                {% endif %}
             </div>
         </div>
-        <div></div>
         {% if forloop.counter|divisibleby:3 %}
         {% endif %}
         {% endfor %}
