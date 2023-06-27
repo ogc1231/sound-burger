@@ -6,6 +6,7 @@
     <div class="container column is-one-third">
         <a class="button" type="button" href="{% url 'get_menu_list' %}">Continue Shopping</a>
         <label class="label">Order Basket</label>
+        {% if items|length > 0 %}
         <table class="table">
             <thead>
                 <tr>
@@ -42,6 +43,9 @@
             </tfoot>
         </table>
         <a class="button" type="button" href="{% url 'checkout' %}">Checkout</a>
+        {% else %}
+            You currently have no items in your cart.
+        {% endif %}
     </div>
 </section>
 
