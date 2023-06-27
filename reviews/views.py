@@ -17,6 +17,7 @@ def add_review(request):
     if request.method == 'POST':
         form = ReviewForm(request.POST)
         if form.is_valid():
+            form.instance.author = request.user
             form.save()
         # author = Review.author
         # title = request.POST.get('title')
