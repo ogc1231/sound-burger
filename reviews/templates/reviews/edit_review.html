@@ -5,9 +5,9 @@
 {% load crispy_forms_tags %}
 
 {% block content %}
-<div class="container columns mx-auto">
+<section class="container columns mx-auto">
     <div class="column is-one-third mx-auto">
-        <h1>Edit Review</h1>
+        <label class="label">Edit Review</label>
         <form method="POST" action="">
             {% csrf_token %}
             {{ form|crispy }}
@@ -29,7 +29,7 @@
             </div>
         </form>
     </div>
-</div>
+</section>
 
 
 {% endblock content %}
