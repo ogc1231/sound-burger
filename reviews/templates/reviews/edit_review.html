@@ -7,7 +7,7 @@
 {% block content %}
 <section class="container columns mx-auto">
     <div class="column is-one-third mx-auto">
-        <label class="label">Edit Review</label>
+        <label class="label is-large">Edit Review</label>
         <form method="POST" action="">
             {% csrf_token %}
             {{ form|crispy }}
