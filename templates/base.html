@@ -51,7 +51,7 @@
             Reviews
           </a>
           {% if user.is_authenticated %}
-          <a class="navbar-item subtitle" href="{% url 'cart' %}">
+          <a class="navbar-item subtitle is-flex" href="{% url 'cart' %}">
             <i class="bi bi-basket"></i>
             <p class="cart-num mb-4 is-size-6 has-background-black has-text-white" id="cart-num">{{ cart_items }}</p>
           </a>
