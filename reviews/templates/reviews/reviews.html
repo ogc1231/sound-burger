@@ -24,8 +24,8 @@
                     </div>
                     <div class="content">
                         {{ review.content }}
-                        <br>
-                        <time>
+                        <br class="mb-4">
+                        <time class="subtitle is-size-6">
                             {% if review.created == review.updated %}
                             <p>Created: {{ review.created }}</p>
                             {% else %}
