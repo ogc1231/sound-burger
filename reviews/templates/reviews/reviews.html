@@ -8,7 +8,7 @@
 
 
 <section class="container">
-    <div class="columns">
+    <div class="columns is-multiline">
         {% for review in review_list %}
         <div class="notification column is-one-third">
             <div>
@@ -17,10 +17,10 @@
                     <p>By: {{ review.author }}</p>
                     <h2>{{ review.content }}</h2>
 
-                    {% if review.updated != review.created %}
-                    <p>Updated: {{ review.updated }}</p>
-                    {% else %}
+                    {% if review.created == review.updated %}
                     <p>Created: {{ review.created }}</p>
+                    {% else %}
+                    <p>Updated: {{ review.updated }}</p>
                     {% endif %}
                 </div>
                 {% if user.is_authenticated %}
