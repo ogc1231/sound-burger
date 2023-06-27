@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.http import JsonResponse
 from django.views.decorators.csrf import csrf_exempt
 import json
@@ -17,8 +17,9 @@ def get_menu_list(request):
 def cart(request):
 
     if request.user.is_authenticated:
-        customer = request.user.customer
-        order, created = Order.objects.get_or_create(customer=customer, complete=False)
+        customer = request.user
+        order, created = Order.objects.get_or_create(
+            customer=customer, complete=False)
         items = order.orderitem_set.all()
     # else:
     #     items = []
@@ -30,8 +31,9 @@ def cart(request):
 
 def checkout(request):
     if request.user.is_authenticated:
-        customer = request.user.customer
-        order, created = Order.objects.get_or_create(customer=customer, complete=False)
+        customer = request.user
+        order, created = Order.objects.get_or_create(
+            customer=customer, complete=False)
         items = order.orderitem_set.all()
     # else:
     #     items = []
@@ -42,6 +44,28 @@ def checkout(request):
     return render(request, 'menu/checkout.html', context)
 
 
+def addItem(request, menu_id):
+    """ Add a menu item to the cart """
+    food = get_object_or_404(Food, id=menu_id)
+    customer = request.user
+    order, created = Order.objects.get_or_create(
+        customer=customer, complete=False
+    )
+    existing_order_item = OrderItem.objects.filter(order=order, product=food).first()
+    print(existing_order_item)
+    print("---")
+    if existing_order_item:
+        quantity = existing_order_item.quantity + 1
+        order_item = OrderItem.objects.create(
+            product=food, order=order, quantity=quantity
+        )
+    else:
+        order_item = OrderItem.objects.create(
+            product=food, order=order, quantity=1
+        )
+    return redirect(reverse('cart'))
+
+
 @csrf_exempt
 def updateItem(request):
     data = json.loads(request.body)
@@ -50,5 +74,3 @@ def updateItem(request):
     print('action:', action)
     print('productsId', productId)
     return JsonResponse('Item was added', safe=False)
-    
-
