@@ -1,7 +1,7 @@
 ---
-name: 'STYLING: '
-about: Styles
-title: ''
+name: Styling template
+about: Styling
+title: 'STYLING: '
 labels: Should-Have
 assignees: ogc1231
 
