@@ -11,21 +11,9 @@
         <form method="POST" action="">
             {% csrf_token %}
             {{ form|crispy }}
-            <!-- <div>
-                <p>
-                    <label for="title">Review Heading</label>
-                    <input type="text" name="title" id="title">
-                </p>
-            </div>
-            <div>
-                <p>
-                    <label for="content">Review Body</label>
-                    <textarea type="textarea" rows="4" cols="50" name="content" id="content"></textarea>
 
-                </p>
-            </div> -->
             <div>
-                <button type="submit" class="btn btn-success">Update Review</button>
+                <button type="submit" class="btn btn-primary">Update Review</button>
                 <a href="{% url 'get_review_list' %}" class="btn btn-danger">Cancel</a>
             </div>
         </form>
