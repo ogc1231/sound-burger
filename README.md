@@ -112,23 +112,31 @@ In this section, list all of your user stories for the project.
 
 ### New Site Users
 
-- As a new site user, I would like to ____________, so that I can ____________.
-- As a new site user, I would like to ____________, so that I can ____________.
-- As a new site user, I would like to ____________, so that I can ____________.
-- As a new site user, I would like to ____________, so that I can ____________.
+- As a new site user, I can view the menu so that I can see what items are available.
+- As a new site user, I can register for an account so that I can become an authenticated user & order food.
+- As a new site user, I can read other reviews so that read about other people's experiences
+- As a new site user, I want to have a user-friendly interface so that I can access the information I need easily and be guided towards registering for an account.
 - As a new site user, I would like to ____________, so that I can ____________.
 
-### Returning Site Users
+### Returning/Authenticated Site Users
 
-- As a returning site user, I would like to ____________, so that I can ____________.
-- As a returning site user, I would like to ____________, so that I can ____________.
-- As a returning site user, I would like to ____________, so that I can ____________.
-- As a returning site user, I would like to ____________, so that I can ____________.
-- As a returning site user, I would like to ____________, so that I can ____________.
+- As a authenticated user I can login in my account so that order food
+- As a authenticated user I can logout of my account so that my data is safe.
+- As a authenticated user I can view add to cart buttons so that add food to cart.
+- As a authenticated user I can edit/update my reviews so that change my reviews in case of grammar/spelling mistakes or to add extra information.
+- As a authenticated user I can delete reviews I have written so that my reviews are deleted and able to be seen by anyone visiting the webpage.
+- As a authenticated user I can access my cart so that I can see a list of all the items I have in my cart.
+- As a authenticated user I can view the quantity of each item I have added to my cart so that so I know I have added to many or few items of each type selected.
+- As a authenticated user I can view the total quantity of items in my cart from any page so that I always know how many items are in my cart.
+- As a authenticated user I can view the total price of items in cart so that I know the final cost of my order.
+- As a authenticated user I can delete items from the cart so that I can update my cart to have the correct quantity of items.
+- As a authenticated user I can easily proceed to checkout page so that so checkout my order.
+- As a authenticated user I can easily continue shopping when in the cart so that add more items to my cart.
+- As a authenticated user I can easily return to cart when in checkout so that so that I can adjust my order.
 
 ### Site Admin
 
-- As a site administrator, I should be able to ____________, so that I can ____________.
+- As a site administrator, I can access the admin panel so that I can see all users, orders, reviews, menu items & edit menus.
 - As a site administrator, I should be able to ____________, so that I can ____________.
 - As a site administrator, I should be able to ____________, so that I can ____________.
 - As a site administrator, I should be able to ____________, so that I can ____________.
