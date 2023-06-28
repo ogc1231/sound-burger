@@ -15,7 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from menu.views import get_menu_list, cart, checkout, addItem, updateItem, deleteItem
+from menu.views import get_menu_list, cart, checkout, addItem, deleteItem
 from reviews.views import get_review_list, add_review, edit_review, delete_review
 from home.views import home
 
@@ -26,7 +26,6 @@ urlpatterns = [
     path('cart/', cart, name='cart'),
     path('checkout/', checkout, name='checkout'),
     path('add_item/<menu_id>/', addItem, name='add_item'),
-    path('update_item/', updateItem, name='update_item'),
     path('delete_item/<menu_id>/', deleteItem, name='delete_item'),
     path('reviews/', get_review_list, name='get_review_list'),
     path('add/', add_review, name='add_review'),
