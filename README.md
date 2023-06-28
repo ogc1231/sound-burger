@@ -10,12 +10,6 @@ The website aim was to build a fullstack website with CRUD functionality using t
 
 ## UX
 
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
-In this section, you will briefly explain your design processes.
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
 ### Colour Scheme
 
 - `#FFE08A` used for main background.
@@ -31,10 +25,6 @@ I used [coolors.co](https://coolors.co/f14668-ffe08a-3e8ed0-48c78e-00d1b2-4a4a4a
 
 ![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/images/coolors.PNG)
 
-⚠️⚠️⚠️⚠️⚠️ Add screenshot ⚠️⚠️⚠️⚠️⚠️
-
-
-
 ### Typography
 
 - [Baloo Tamma 2](https://fonts.google.com/specimen/Baloo+Tamma+2?query=Baloo+Tamma+2) was used for the primary headers and titles.
@@ -43,7 +33,7 @@ I used [coolors.co](https://coolors.co/f14668-ffe08a-3e8ed0-48c78e-00d1b2-4a4a4a
 
 - [Font Awesome](https://fontawesome.com) icons were used throughout the site, except icons in the footer.
 
-- [Bootstrap](https://icons.getbootstrap.com/) icons were used throughout the site, only for icons in the footer.
+- [Bootstrap](https://icons.getbootstrap.com/) icons were used only for icons in the footer.
 
 ## User Stories
 
@@ -80,14 +70,6 @@ I used [coolors.co](https://coolors.co/f14668-ffe08a-3e8ed0-48c78e-00d1b2-4a4a4a
 
 ## Wireframes
 
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
-In this section, display your wireframe screenshots using a Markdown `table`.
-
-Instructions on how to do Markdown `tables` start on line #213 on this site: https://pandao.github.io/editor.md/en.html
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
 To follow best practice, wireframes were developed for mobile, tablet, and desktop sizes.
 I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wireframes.
 
@@ -99,7 +81,7 @@ I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wirefram
 | Tablet | ![screenshot](documentation/wireframes/tablet-home.png) |
 | Desktop | ![screenshot](documentation/wireframes/desktop-home.png) |
 
-### About Page Wireframes
+### Menu Page Wireframes
 
 | Size | Screenshot |
 | --- | --- |
@@ -107,7 +89,7 @@ I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wirefram
 | Tablet | ![screenshot](documentation/wireframes/tablet-about.png) |
 | Desktop | ![screenshot](documentation/wireframes/desktop-about.png) |
 
-### Contact Page Wireframes
+### Review Page Wireframes
 
 | Size | Screenshot |
 | --- | --- |
@@ -115,11 +97,38 @@ I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wirefram
 | Tablet | ![screenshot](documentation/wireframes/tablet-contact.png) |
 | Desktop | ![screenshot](documentation/wireframes/desktop-contact.png) |
 
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
+### Add Review Page Wireframes
 
-Repeat for any addition wireframe pages you have.
+| Size | Screenshot |
+| --- | --- |
+| Mobile | ![screenshot](documentation/wireframes/mobile-contact.png) |
+| Tablet | ![screenshot](documentation/wireframes/tablet-contact.png) |
+| Desktop | ![screenshot](documentation/wireframes/desktop-contact.png) |
 
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+### Edit Review Page Wireframes
+
+| Size | Screenshot |
+| --- | --- |
+| Mobile | ![screenshot](documentation/wireframes/mobile-contact.png) |
+| Tablet | ![screenshot](documentation/wireframes/tablet-contact.png) |
+| Desktop | ![screenshot](documentation/wireframes/desktop-contact.png) |
+
+
+### Cart Page Wireframes
+
+| Size | Screenshot |
+| --- | --- |
+| Mobile | ![screenshot](documentation/wireframes/mobile-contact.png) |
+| Tablet | ![screenshot](documentation/wireframes/tablet-contact.png) |
+| Desktop | ![screenshot](documentation/wireframes/desktop-contact.png) |
+
+### Ckeckout Page Wireframes
+
+| Size | Screenshot |
+| --- | --- |
+| Mobile | ![screenshot](documentation/wireframes/mobile-contact.png) |
+| Tablet | ![screenshot](documentation/wireframes/tablet-contact.png) |
+| Desktop | ![screenshot](documentation/wireframes/desktop-contact.png) |
 
 ## Features
 
@@ -168,21 +177,16 @@ Hint: the more, the merrier!
 
 ### Future Features
 
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
-Do you have additional ideas that you'd like to include on your project in the future?
-Fantastic! List them here!
-It's always great to have plans for future improvements!
-Consider adding any helpful links or notes to help remind you in the future, if you revisit the project in a couple years.
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-- Title for future feature #1
-    - Any additional notes about this feature.
-- Title for future feature #2
-    - Any additional notes about this feature.
-- Title for future feature #3
-    - Any additional notes about this feature.
+- Reset Password
+    - User can reset their password.
+- Delivery Tracking
+    - User can track order on the website, including cooking and delievry updates via website, email & text.
+- Delete Account
+    - User can delete their own account if needed.
+- About Page
+    - Page explaing the backgorund and mission of SoundBurger.
+- Pickup Option
+    - User can choose to pickup order instead of having it delivered.
 
 ## Tools & Technologies Used
 
