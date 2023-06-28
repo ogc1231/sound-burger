@@ -1,11 +1,11 @@
 from django.shortcuts import render, redirect, get_object_or_404
 from .models import Review
+from django.contrib import messages
 from .forms import ReviewForm
 
 
 def get_review_list(request):
     review_list = Review.objects.all
-    # queryset = Review.objects.filter(is_public=True).order_by('created')
 
     context = {
         'review_list': review_list,
@@ -19,11 +19,8 @@ def add_review(request):
         if form.is_valid():
             form.instance.author = request.user
             form.save()
-        # author = Review.author
-        # title = request.POST.get('title')
-        # content = request.POST.get('content')
-        # Review.objects.create(title=title, content=content)
-            return redirect('get_review_list')
+            messages.success(request, 'Review added')
+
     form = ReviewForm()
     context = {
         'form': form
@@ -37,6 +34,7 @@ def edit_review(request, review_id):
         form = ReviewForm(request.POST, instance=review)
         if form.is_valid():
             form.save()
+            messages.success(request, 'Review edited')
             return redirect('get_review_list')
     form = ReviewForm(instance=review)
     context = {
@@ -48,4 +46,5 @@ def edit_review(request, review_id):
 def delete_review(request, review_id):
     review = get_object_or_404(Review, id=review_id)
     review.delete()
+    messages.error(request, 'Review deleted')
     return redirect('get_review_list')
