@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
-from django.http import JsonResponse
-from django.views.decorators.csrf import csrf_exempt
-import json
+
+from django.contrib import messages
+
 from .models import *
 
 
@@ -21,9 +21,6 @@ def cart(request):
         order, created = Order.objects.get_or_create(
             customer=customer, complete=False)
         items = order.orderitem_set.all()
-    # else:
-    #     items = []
-    #     order = {'get_cart_total': 0, 'get_cart_item': 0}
 
     context = {'items': items, 'order': order}
     return render(request, 'menu/cart.html', context)
@@ -35,9 +32,13 @@ def checkout(request):
         order, created = Order.objects.get_or_create(
             customer=customer, complete=False)
         items = order.orderitem_set.all()
-    # else:
-    #     items = []
-    #     order = {'get_cart_total': 0, 'get_cart_item': 0}
+        if request.method == 'POST':
+            print(request)
+            order.complete = True
+            order.save()
+            messages.success(
+                request, 'Order Complete, your food will be with you shortly')
+            return redirect(reverse('home'))
 
     context = {'items': items, 'order': order}
 
@@ -65,17 +66,8 @@ def addItem(request, menu_id):
         existing_order_item.quantity += 1
         # save the changes to the DB
         existing_order_item.save()
+    messages.success(request, f'{food} added to cart')
     return redirect(reverse('cart'))
-
-
-@csrf_exempt
-def updateItem(request):
-    data = json.loads(request.body)
-    productId = data['productId']
-    action = data['action']
-    print('action:', action)
-    print('productsId', productId)
-    return JsonResponse('Item was added', safe=False)
 
 
 def deleteItem(request, menu_id):
@@ -91,4 +83,5 @@ def deleteItem(request, menu_id):
     if existing_order_item is not None:
         # existing food on this order was found, delete it
         existing_order_item.delete()
+        messages.error(request, f'{food} removed from cart')
     return redirect(reverse('cart'))
