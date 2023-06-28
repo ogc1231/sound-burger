@@ -1,18 +1,22 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
-      <section>
-        <div class="container hero is-warning is-fullheight-with-navbar">
-          <div class="columns is-multiline hero-body">
-            <div class="column is-full-mobile is-full-tablet is-half-desktop">
-                <h2 class="title">Enjoy Delicious Burgers</h2>
-                <h3 class="subtitle">Improve your day by eating the best burgers at home!</h3>
-                <a class="button is-danger is-large is-rounded is-responsive" href="{% url 'get_menu_list' %}">Order Now!</a>
-            </div>
-            <div class="column is-full-mobile is-full-tablet is-half-desktop">
-                <img class="image" src="https://res.cloudinary.com/dlnmcty8k/image/upload/v1686923761/burger-hamburger-cheeseburger-full-nbg_innxx5.png" alt="">
-            </div>
-          </div>
-        </div>
-      </section>
+
+<section>
+  <div class="container hero is-warning is-fullheight-with-navbar">
+    <div class="columns is-multiline hero-body">
+      <div class="column is-full-mobile is-full-tablet is-half-desktop">
+        <h2 class="title">Enjoy Delicious Burgers</h2>
+        <h3 class="subtitle">Improve your day by eating the best burgers at home!</h3>
+        <a class="button is-danger is-large is-rounded is-responsive" href="{% url 'get_menu_list' %}">Order Now!</a>
+      </div>
+      <div class="column is-full-mobile is-full-tablet is-half-desktop">
+        <img class="image"
+          src="https://res.cloudinary.com/dlnmcty8k/image/upload/v1686923761/burger-hamburger-cheeseburger-full-nbg_innxx5.png"
+          alt="">
+      </div>
+    </div>
+  </div>
+</section>
+
 {% endblock content %}
