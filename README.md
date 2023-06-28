@@ -1,24 +1,13 @@
 # SOUND BURGER
 
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
+This is the website for SoundBurger, a burger delivery only resturant based in Dublin, Ireland. The aim of the website is to allow users to create an account and order food from am updateable menu which can be added to a cart, checkedout and delivered to their address. It also functions as place where users can leave reviews about their experinces with SoundBurger, the food and the service. 
 
-In this section, you will include a few paragraphs providing an overview of your project.
-Essentially, this part is your "sales pitch".
+The website aim was to build a fullstack website with CRUD functionality using the Django framework and agile methodologies.
 
-At this stage, you should have a name for your project so use it!
-Don't introduce the project as a "portfolio project" for the diploma.
-
-In this section, describe what the project hopes to accomplish, who it is intended to target, and how it will be useful to the target audience.
-
-Consider adding a mockup image using the "Am I Responsive" website.
-Here's your deployed site as an example:
-https://ui.dev/amiresponsive?url=https://soundburger.herokuapp.com
-
+[Live link to website](https://soundburger.herokuapp.com/)
 
 ![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/images/mockup.PNG)
 
-
-[Live link to website](https://soundburger.herokuapp.com/)
 ## UX
 
 ⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
