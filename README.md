@@ -14,20 +14,11 @@ Consider adding a mockup image using the "Am I Responsive" website.
 Here's your deployed site as an example:
 https://ui.dev/amiresponsive?url=https://soundburger.herokuapp.com
 
-Screenshots for the README and testing should not be inside of `assets/` or `static/` image folders.
-(reminder: `assets/` and `static/` are for files used on the live site, not documentation)
-Consider adding a new folder called `documentation`, and add the amiresponsive screenshot inside of that folder.
-To add the image into your README, use this format:
-(assuming you have a new folder called `documentation` with an image called "mockup.png")
 
-![screenshot](documentation/mockup.png)
+![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/images/mockup.PNG)
 
-Note: Markdown files (.md) should not contain HTML elements like `img`, `br`, `div`, `a`, etc, only Markdown formatting.
-Find out more about using Markdown elements here:
-https://pandao.github.io/editor.md/en.html
 
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
+[Live link to website](https://soundburger.herokuapp.com/)
 ## UX
 
 ⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
@@ -49,7 +40,7 @@ In this section, you will briefly explain your design processes.
 
 I used [coolors.co](https://coolors.co/f14668-ffe08a-3e8ed0-48c78e-00d1b2-4a4a4a-fafafa-ffffff) to generate my colour palette.
 
-![screenshot](documentation/coolors.png)
+![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/images/coolors.PNG)
 
 ⚠️⚠️⚠️⚠️⚠️ Add screenshot ⚠️⚠️⚠️⚠️⚠️
 
