@@ -7,49 +7,52 @@
 {% block content %}
 
 
-<section class="container">
-<div>
-    <h3 class="title is-size-3 has-text-centered mb-3">Reviews</h3>
-</div>
-    <div class="columns is-multiline">
-        {% for review in review_list %}
-        <div class="column is-one-third">
-            <div class="card">
-                <div class="card-content">
-                    <div class="media">
-                        <div class="media-content">
-                            <p class="title is-4">{{ review.title }}</p>
-                            <p class="subtitle is-6">By: {{ review.author }}</p>
+<section class="section">
+    <div class="container">
+        <div>
+            <h3 class="title is-size-3 has-text-centered mb-3">Reviews</h3>
+        </div>
+        <div class="columns is-multiline">
+            {% for review in review_list %}
+            <div class="column is-one-third is-flex-direction-column">
+                <div class="card notification not-1">
+                    <div class="card-content">
+                        <div class="media">
+                            <div class="media-content">
+                                <p class="title is-4">{{ review.title }}</p>
+                                <p class="subtitle is-6">By: {{ review.author }}</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="content">
-                        {{ review.content }}
-                        <br class="mb-4">
-                        <time class="subtitle is-size-6">
-                            {% if review.created|date:"U" == review.updated|date:"U" %}
+                        <div class="content">
+                            <p>{{ review.content }}</p>
+                        </div>
+                        <div class="">
+                            <time class="subtitle is-size-6">
+                                {% if review.created|date:"U" == review.updated|date:"U" %}
                                 <p>Created: {{ review.created|date:"F d, Y @ H:m" }}</p>
-                            {% else %}
+                                {% else %}
                                 <p>Updated: {{ review.updated|date:"F d, Y @ H:m" }}</p>
+                                {% endif %}
+                            </time>
+                            {% if request.user == review.author %}
+                            <div>
+                                <a href="{% url 'edit_review' review.id %}">Edit</a> |
+                                <a href="{% url 'delete_review' review.id %}">Delete</a>
+                            </div>
                             {% endif %}
-                        </time>
-                        {% if request.user == review.author %}
-                        <div>
-                            <a href="{% url 'edit_review' review.id %}">Edit</a> |
-                            <a href="{% url 'delete_review' review.id %}">Delete</a>
                         </div>
-                        {% endif %}
                     </div>
                 </div>
             </div>
+            {% if forloop.counter|divisibleby:3 %}
+            {% endif %}
+            {% endfor %}
         </div>
-        {% if forloop.counter|divisibleby:3 %}
-        {% endif %}
-        {% endfor %}
-    </div>
-    <div>
-        {% if user.is_authenticated %}
-        <a href="{% url 'add_review' %}">Add a review</a>
-        {% endif %}
+        <div>
+            {% if user.is_authenticated %}
+            <a href="{% url 'add_review' %}">Add a review</a>
+            {% endif %}
+        </div>
     </div>
 </section>
 
