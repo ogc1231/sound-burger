@@ -7,20 +7,21 @@
         <h3 class="is-size-3 has-text-centered mb-6">Checkout</h3>
         <div class="columns is-multiline">
 
-            <form action="" class="container column is-half">
+            <form action="{% url 'checkout' %}" class="container column is-half" method="POST">
+                {% csrf_token %}
                 <label class="label is-size-5">Shipping Address</label>
                 <div class="columns is-multiline mb-0">
                     <div class="field column mb-0">
-                        <label class="label">Name</label>
+                        <label class="label" for="name">Name</label>
                         <div class="control">
-                            <input class="input" type="text" placeholder="James Burke" required>
+                            <input class="input" type="text" placeholder="James Burke" id="name" name="name" required>
                         </div>
                     </div>
 
                     <div class="field column">
-                        <label class="label">Email</label>
+                        <label class="label" for="email">Email</label>
                         <div class="control has-icons-left has-icons-right">
-                            <input class="input is-danger" type="email" placeholder="james@burke.com" required>
+                            <input class="input is-danger" type="email" id="email" name="email" placeholder="james@burke.com" required>
                             <span class="icon is-small is-left">
                                 <i class="fas fa-envelope"></i>
                             </span>
@@ -29,23 +30,23 @@
                 </div>
 
                 <div class="field">
-                    <label class="label">Address line 1</label>
-                    <input type="text" class="input" name="address1" required>
+                    <label class="label" for="address1">Address line 1</label>
+                    <input type="text" class="input" name="address1" id="address1" required>
                 </div>
 
                 <div class="field">
-                    <label class="label">Address line 2</label>
-                    <input type="text" class="input" name="address2">
+                    <label class="label" for="address2">Address line 2</label>
+                    <input type="text" class="input" name="address2" id="address2">
                 </div>
 
                 <div class="columns is-multiline">
                     <div class="column">
-                        <label class="label">District</label>
+                        <label class="label" for="district">District</label>
                         <div class="field has-addons">
                             <div class="control is-expanded">
                                 <div class="select is-fullwidth">
-                                    <select name="country" required>
-                                        <option value="">Choose District</option>
+                                    <select name="district" id="district" required>
+                                        <option value="" selected disabled>Choose District</option>
                                         <option value="Dublin 1">Dublin 1</option>
                                         <option value="Dublin 2">Dublin 2</option>
                                         <option value="Dublin 3">Dublin 3</option>
@@ -75,14 +76,14 @@
                     </div>
 
                     <div class="column">
-                        <label class="label">Eircode/Postcode</label>
-                        <input type="text" class="input" name="postcode" required>
+                        <label class="label" for="postcode">Eircode/Postcode</label>
+                        <input type="text" class="input" name="postcode" id="postcode" required>
                     </div>
                 </div>
 
                 <div class="field">
                     <div class="control mb-3">
-                        <button class="button is-primary">Confirm Order</button>
+                        <button class="button is-primary" type="submit">Confirm Order</button>
                     </div>
                     <div>
                         <a class="control button is-info" type="button" href="{% url 'cart' %}">Return to cart</a>
