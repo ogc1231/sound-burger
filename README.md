@@ -39,34 +39,42 @@ I used [coolors.co](https://coolors.co/f14668-ffe08a-3e8ed0-48c78e-00d1b2-4a4a4a
 
 ### New Site Users
 
-- As a new site user, I can view the menu so that I can see what items are available.
-- As a new site user, I can register for an account so that I can become an authenticated user & order food.
-- As a new site user, I can read other reviews so that read about other people's experiences
-- As a new site user, I want to have a user-friendly interface so that I can access the information I need easily and be guided towards registering for an account.
+- As a new site user, I can view the menu so that I can see what items are available. `(MUST HAVE)`
+- As a new site user, I can register for an account so that I can become an authenticated user & order food. `(MUST HAVE)`
+- As a new site user, I can read other reviews so that read about other people's experiences. `(MUST HAVE)`
+- As a new site user, I want to have a user-friendly interface so that I can access the information I need easily and be guided towards registering for an account. `(SHOULD HAVE)`
+- As a new site user I can see and click on social media links so that view the social media pages of SoundBurger. `(COULD HAVE)`
+- As a user I can view contact contact info of SoundBurger so that contact them to ask questions. `(WON'T HAVE)`
 
 ### Authenticated?Registered Site Users
 
-- As a authenticated user I can login in my account so that order food
-- As a authenticated user I can logout of my account so that my data is safe.
-- As a authenticated user I can view add to cart buttons so that add food to cart.
-- As a authenticated user I can edit/update my reviews so that change my reviews in case of grammar/spelling mistakes or to add extra information.
-- As a authenticated user I can delete reviews I have written so that my reviews are deleted and able to be seen by anyone visiting the webpage.
-- As a authenticated user I can access my cart so that I can see a list of all the items I have in my cart.
-- As a authenticated user I can view the quantity of each item I have added to my cart so that so I know I have added to many or few items of each type selected.
-- As a authenticated user I can view the total quantity of items in my cart from any page so that I always know how many items are in my cart.
-- As a authenticated user I can view the total price of items in cart so that I know the final cost of my order.
-- As a authenticated user I can delete items from the cart so that I can update my cart to have the correct quantity of items.
-- As a authenticated user I can easily proceed to checkout page so that so checkout my order.
-- As a authenticated user I can easily continue shopping when in the cart so that add more items to my cart.
-- As a authenticated user I can easily return to cart when in checkout so that so that I can adjust my order.
+- As a authenticated user I can login in my account so that order food. `(MUST HAVE)`
+- As a authenticated user I can logout of my account so that my data is safe. `(MUST HAVE)`
+- As a authenticated user I can view add to cart buttons so that I can add food to cart. `(MUST HAVE)`
+- As a authenticated user I can edit/update my reviews so that change my reviews in case of grammar/spelling mistakes or to add extra information. `(MUST HAVE)`
+- As a authenticated user I can delete reviews I have written so that my reviews are deleted and able to be seen by anyone visiting the webpage. `(MUST HAVE)`
+- As a authenticated user I can access my cart so that I can see a list of all the items I have in my cart. `(MUST HAVE)`
+- As a authenticated user I can view the quantity of each item I have added to my cart so that so I know I have added to many or few items of each type selected. `(MUST HAVE)`
+- As a authenticated user I can view the total price of items in cart so that I know the final cost of my order. `(MUST HAVE)`
+- As a authenticated user I can delete items from the cart so that I can update my cart to have the correct quantity of items. `(MUST HAVE)`
+- As a authenticated user I can easily proceed to checkout page so that so checkout my order. `(MUST HAVE)`
+- As a authenticated user I can view the total quantity of items in my cart from any page so that I always know how many items are in my cart. `(SHOULD HAVE)`
+- As a authenticated user I can easily continue shopping when in the cart so that add more items to my cart. `(SHOULD HAVE)`
+- As a authenticated user I can easily return to cart when in checkout so that so that I can adjust my order. `(SHOULD HAVE)`
+- As a authenticated user I must confirm deletion of review so that I make sure I actually want to delete it and not just delete it by mistake. `(SHOULD HAVE)`
+- As a authenticated user I can cancel updating my review so that I don't have change my review if I decide I don't need to. `(SHOULD HAVE)`
+- As a authenticated user I can see order complete message so that I know my order has been made. `(SHOULD HAVE)`
+- As a authenticated user I can can see successfully signed out message so that I know I have been signed out. `(COULD HAVE)`
+- As a authenticated user I can can see successfully signed in message so that I know I have been signed in. `(COULD HAVE)`
+- As a authenticated user I can see removed item from cart message so that I know the item have been removed from cart. `(COULD HAVE)`
+- As a authenticated user I can see added item to cart message so that I know the item have been added to cart. `(COULD HAVE)`
+- As a authenticated user I can delete my account so that my account and my information is deleted. `(WON'T HAVE)`
+- As a authenticated user I can reset my password so that change my password if forgotten or need to update for other reasons. `(WON'T HAVE)`
+- As a authenticated user I can choose to pickup my order so that I don't have wait for food to be delivered. `(WON'T HAVE)`
 
 ### Site Admin
 
-- As a site administrator, I can access the admin panel so that I can see all users, orders, reviews, menu items & edit menus.
-- As a site administrator, I should be able to ____________, so that I can ____________.
-- As a site administrator, I should be able to ____________, so that I can ____________.
-- As a site administrator, I should be able to ____________, so that I can ____________.
-- As a site administrator, I should be able to ____________, so that I can ____________.
+- As a site administrator, I can access the admin panel so that I can see all users, orders, reviews, menu items & edit menus. `(MUST HAVE)`
 
 ## Wireframes
 
@@ -187,6 +195,10 @@ Hint: the more, the merrier!
     - Page explaing the backgorund and mission of SoundBurger.
 - Pickup Option
     - User can choose to pickup order instead of having it delivered.
+- Click to reorder
+    - User can at a press of button reorder a previously placed order.
+- Contact information
+    - Add contact information to the site.
 
 ## Tools & Technologies Used
 
