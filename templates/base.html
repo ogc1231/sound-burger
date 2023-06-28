@@ -119,8 +119,9 @@
   <section id="alerts">
       {% for msg in messages %}
           <!-- all django message tags mirror bootstrap, except error/danger -->
-          <aside class="alert {% if msg.tags == 'error' %}alert-danger{% else %}alert-{{ msg.tags }}{% endif %} text-center" role="alert">
-              <h3>{{ msg }}</h3>
+          <aside class="d-flex align-items-center alert alert-dimissible {% if msg.tags == 'error' %}alert-danger{% else %}alert-{{ msg.tags }}{% endif %} text-center" role="alert">
+              <h3 class="w-100">{{ msg }}</h3>
+              <button class="btn-close flex-shrink-1" data-bs-dismiss="alert" aria-label="close"></button>
           </aside>
       {% endfor %}
   </section>
