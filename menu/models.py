@@ -71,15 +71,15 @@ class OrderItem(models.Model):
         return total
 
 
-class ShippingAddress(models.Model):
-    customer = models.ForeignKey(
-        User, on_delete=models.SET_NULL, blank=True, null=True)
-    order = models.ForeignKey(
-        Order, on_delete=models.SET_NULL, blank=True, null=True)
-    address = models.CharField(max_length=200, null=True)
-    county = models.CharField(max_length=200, null=True)
-    eircode = models.CharField(max_length=200, null=True)
-    date_added = models.DateField(auto_now_add=True)
+# class ShippingAddress(models.Model):
+#     customer = models.ForeignKey(
+#         User, on_delete=models.SET_NULL, blank=True, null=True)
+#     order = models.ForeignKey(
+#         Order, on_delete=models.SET_NULL, blank=True, null=True)
+#     address = models.CharField(max_length=200, null=True)
+#     county = models.CharField(max_length=200, null=True)
+#     eircode = models.CharField(max_length=200, null=True)
+#     date_added = models.DateField(auto_now_add=True)
 
-    def __str__(self):
-        return self.address
+#     def __str__(self):
+#         return self.address
