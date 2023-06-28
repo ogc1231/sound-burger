@@ -86,29 +86,15 @@ I've used CSS `:root` variables to easily update the global colour scheme by cha
 
 ### Typography
 
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
-Explain any fonts and icon libraries used, like Google Fonts and/or Font Awesome.
-
-Consider adding a link to each font used, and the Font Awesome site if used (or similar icon library).
-
-Example:
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-- [Montserrat](https://fonts.google.com/specimen/Montserrat) was used for the primary headers and titles.
+- [Baloo Tamma 2](https://fonts.google.com/specimen/Baloo+Tamma+2?query=Baloo+Tamma+2) was used for the primary headers and titles.
 
 - [Lato](https://fonts.google.com/specimen/Lato) was used for all other secondary text.
 
-- [Font Awesome](https://fontawesome.com) icons were used throughout the site, such as the social media icons in the footer.
+- [Font Awesome](https://fontawesome.com) icons were used throughout the site, except icons in the footer.
+
+- [Bootstrap](https://icons.getbootstrap.com/) icons were used throughout the site, only for icons in the footer.
 
 ## User Stories
-
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
-In this section, list all of your user stories for the project.
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
 
 ### New Site Users
 
@@ -116,9 +102,8 @@ In this section, list all of your user stories for the project.
 - As a new site user, I can register for an account so that I can become an authenticated user & order food.
 - As a new site user, I can read other reviews so that read about other people's experiences
 - As a new site user, I want to have a user-friendly interface so that I can access the information I need easily and be guided towards registering for an account.
-- As a new site user, I would like to ____________, so that I can ____________.
 
-### Returning/Authenticated Site Users
+### Authenticated?Registered Site Users
 
 - As a authenticated user I can login in my account so that order food
 - As a authenticated user I can logout of my account so that my data is safe.
