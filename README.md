@@ -458,15 +458,20 @@ You can fork this repository by using the following steps:
 
 | Source | Location | Type | Notes |
 | --- | --- | --- | --- |
-| [Pexels](https://www.pexels.com) | entire site | image | favicon on all pages |
-| [Lorem Picsum](https://picsum.photos) | home page | image | hero image background |
-| [Unsplash](https://unsplash.com) | product page | image | sample of fake products |
-| [Pixabay](https://pixabay.com) | gallery page | image | group of photos for gallery |
-| [Wallhere](https://wallhere.com) | footer | image | background wallpaper image in the footer |
-| [This Person Does Not Exist](https://thispersondoesnotexist.com) | testimonials | image | headshots of fake testimonial images |
-| [Audio Micro](https://www.audiomicro.com/free-sound-effects) | game page | audio | free audio files to generate the game sounds |
-| [Videvo](https://www.videvo.net/) | home page | video | background video on the hero section |
-| [TinyPNG](https://tinypng.com) | entire site | image | tool for image compression |
+| [Favicon](https://gauger.io/fonticon/) | entire site | image | favicon on all pages |
+| [Hero Image](https://www.freepik.com/free-photo/burger-hamburger-cheeseburger_40824438.htm#query=burger&position=1&from_view=search&track=sph) | homepage | image | hero image  |
+| [Hamburger](https://www.freepik.com/premium-photo/hamburger-with-lettuce-tomato-onion-it_44910559.htm#query=hamburger%20burgers&position=21&from_view=search&track=ais) | menu | image | hamburger menu item |
+| [Double Hamburger](https://www.freepik.com/premium-photo/hamburger-with-lettuce-it-white-background_45316456.htm#page=2&query=double%20hamburger&position=22&from_view=search&track=ais) | menu  | image | double hamburger menu item |
+| [Cheeseburger](https://www.freepik.com/premium-photo/beef-burger-isolated-illustration-generative-ai_38217221.htm#query=burger&position=19&from_view=search&track=sph) | menu  | image | cheeseburger menu item |
+| [Double Cheeseburger](https://www.freepik.com/premium-photo/beef-burger-isolated-illustration-generative-ai_38217276.htm#query=burger&position=18&from_view=search&track=sph) | menu | image | double cheeseburger menu item |
+| [Coca Cola](https://www.google.com/search?client=firefox-b-d&sxsrf=APwXEddnqMaKW_sTsunp1BpkU7Qleh6e2g:1687273543201&q=coca+cola+can&tbm=isch&sa=X&ved=2ahUKEwiiubnhj9L_AhWlS0EAHVcDDbYQ0pQJegQIDBAB&biw=1536&bih=711&dpr=1.25#imgrc=hm5WpAAVuvRrKM) | menu  | image | coca cola menu item |
+| [Sprite](https://www.google.com/search?q=sprite+can&tbm=isch&ved=2ahUKEwjs9K3yjNL_AhV0olwKHZPGAJEQ2-cCegQIABAA&oq=sprite+can&gs_lcp=CgNpbWcQAzIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQ6BAgjECc6BwgAEIoFEEM6BggAEAcQHjoICAAQCBAHEB5QkBFY-ShghC5oA3AAeACAAXyIAf0HkgEDNy40mAEAoAEBqgELZ3dzLXdpei1pbWfAAQE&sclient=img&ei=Rb2RZKy-FfTE8gKTjYOICQ&bih=711&biw=1519&client=firefox-b-d&hl=en#imgrc=HNt-9-hEQFXLPM) | menu  | image | sprite menu item |
+| [Fanta Orange](https://www.google.com/search?q=fanta+can&tbm=isch&ved=2ahUKEwiC7IaDjdL_AhXLTEEAHfj4CTcQ2-cCegQIABAA&oq=fanta+can&gs_lcp=CgNpbWcQAzIHCAAQigUQQzIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDoECCMQJzoGCAAQBxAeOggIABAIEAcQHjoJCAAQGBCABBAKOgcIABCABBAKUMkHWNAdYI4faANwAHgAgAF7iAH7BpIBAzUuNJgBAKABAaoBC2d3cy13aXotaW1nwAEB&sclient=img&ei=aL2RZIKYFsuZhbIP-PGnuAM&bih=711&biw=1519&client=firefox-b-d&hl=en#imgrc=y1jLxovYANeKkM&imgdii=8Byf56u8DMXJgM) | menu | audio | fanta orange menu item |
+| [Milkshake](https://www.freepik.com/premium-psd/psd-cappuccino-coffee-with-whipped-cream-chocolate-isolated-alpha-layer_39077355.htm#query=milkshake&position=26&from_view=search&track=sph) | menu  | video | milkshake menu item |
+| [Hand Cut Fries](https://www.freepik.com/premium-photo/french-fries_44970832.htm#query=frenchfries&position=32&from_view=search&track=ais?log-in=google) | menu  | image | hand cut fries menu item |
+| [Shoestring Fries](https://www.freepik.com/premium-photo/paper-container-french-fries-with-white-paper-bag-that-says-french-fries_41796067.htm#query=sweet%20potato%20fries&position=14&from_view=search&track=ais_ai_generated) | menu  | image | shoestring fries menu item |
+| [Nuggets - 6pcs](https://www.freepik.com/premium-photo/nuggets-meal_44996584.htm#page=2&query=mozarella%20stick&position=7&from_view=search&track=ais) | menu  | image | nuggets - 6pcs menu item |
+
 
 ### Acknowledgements
 
