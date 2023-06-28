@@ -6,7 +6,7 @@ The website aim was to build a fullstack website with CRUD functionality using t
 
 [Live link to website](https://soundburger.herokuapp.com/)
 
-![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/images/mockup.PNG)
+![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/screenshots/mockup.PNG)
 
 ## UX
 
@@ -23,7 +23,7 @@ The website aim was to build a fullstack website with CRUD functionality using t
 
 I used [coolors.co](https://coolors.co/f14668-ffe08a-3e8ed0-48c78e-00d1b2-4a4a4a-fafafa-ffffff) to generate my colour palette.
 
-![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/images/coolors.PNG)
+![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/screenshots/coolors.PNG)
 
 ### Typography
 
