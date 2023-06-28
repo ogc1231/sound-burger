@@ -4,9 +4,11 @@
 
 <section class="section">
     <div class="container">
+        <h3 class="is-size-3 has-text-centered mb-6">Checkout</h3>
         <div class="columns is-multiline">
-            <form action="" class="container column is-half">
 
+            <form action="" class="container column is-half">
+                <label class="label is-size-5">Shipping Address</label>
                 <div class="columns is-multiline mb-0">
                     <div class="field column mb-0">
                         <label class="label">Name</label>
@@ -77,18 +79,20 @@
                         <input type="text" class="input" name="postcode" required>
                     </div>
                 </div>
-                
-                <div class="field is-grouped">
-                    <div class="control">
-                        <button class="button is-link">Confirm Order</button>
+
+                <div class="field">
+                    <div class="control mb-3">
+                        <button class="button is-primary">Confirm Order</button>
+                    </div>
+                    <div>
+                        <a class="control button is-info" type="button" href="{% url 'cart' %}">Return to cart</a>
                     </div>
             </form>
         </div>
 
         <div class="container column is-half">
-            <a class="button" type="button" href="{% url 'cart' %}">Return to cart</a>
-            <label class="label">Order Summary</label>
-            
+            <label class="label is-size-5">Order Summary</label>
+
             <table class="table">
                 <thead>
                     <tr>
