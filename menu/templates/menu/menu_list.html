@@ -2,7 +2,6 @@
 
 {% block content %}
 
-<!-- regroup food_list by food_types (burgers, sides, drinks) -->
 {% regroup food_list|dictsort:'food_type' by get_food_type_display as menu_list %}
 
 {% for grouper, menu in menu_list %}
@@ -12,24 +11,23 @@
     <div class="columns is-multiline">
       {% for food in menu|dictsort:'id' %}
       <div class="column is-full-mobile is-half-tablet is-half-desktop is-one-quarter-widescreen is-one-quarter-fullhd">
-        <div class="notification {% if food.food_type == 'burger' %}has-background-primary has-text-black{% elif food.food_type == 'side' %}has-background-success has-text-black{% elif food.food_type == 'drink' %}has-background-info has-text-white{% endif %}">
+        <div
+          class="notification {% if food.food_type == 'burger' %}has-background-primary has-text-black{% elif food.food_type == 'side' %}has-background-success has-text-black{% elif food.food_type == 'drink' %}has-background-info has-text-white{% endif %}">
           {% if "placeholder" in food.item_image.url %}
-          <img class="image is-128x128 mx-auto" 
+          <img class="image is-128x128 mx-auto"
             src="https://res.cloudinary.com/dlnmcty8k/image/upload/v1686923761/burger-hamburger-cheeseburger-full-nbg_innxx5.png"
             alt="{{ food.name }}">
           {% else %}
-          <img class="image is-128x128 mx-auto"
-            src="{{ food.item_image.url }}"
-            alt="{{ food.name }}">
-            {% endif %}
+          <img class="image is-128x128 mx-auto" src="{{ food.item_image.url }}" alt="{{ food.name }}">
+          {% endif %}
           <h4 class="is-size-4 pt-2">{{ food.name }}</h4>
-          
+
           <p class="is-size-6 pt-1">{{ food.desc }}</p>
           <div class="is-flex-direction-column is-justify-content-space-evenly">
             <p class="pt-1">€{{ food.price|floatformat:2 }}</p>
             {% if user.is_authenticated %}
-            <a href="{% url 'add_item' food.id %}" class="button is-danger is-rounded is-normal mt-2 add-to-cart">Add to cart</a>
-            <!-- <button data-product="{{ food.id }}" data-action="add" class="button is-danger is-rounded is-normal mt-2 add-to-cart" value="{{ food.id }}">Add to cart</button> -->
+            <a href="{% url 'add_item' food.id %}" class="button is-danger is-rounded is-normal mt-2 add-to-cart">Add to
+              cart</a>
             {% endif %}
           </div>
         </div>

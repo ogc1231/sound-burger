@@ -22,22 +22,11 @@ class Food(models.Model):
         return self.name
 
 
-# class Customer(models.Model):
-#     user = models.OneToOneField(
-#         User, on_delete=models.CASCADE, null=True, blank=True)
-#     name = models.CharField(max_length=200, null=True)
-#     email = models.CharField(max_length=200, null=True)
-
-#     def __str__(self):
-#         return self.name
-
-
 class Order(models.Model):
     customer = models.ForeignKey(
         User, on_delete=models.SET_NULL, blank=True, null=True)
     date_ordered = models.DateField(auto_now_add=True)
     complete = models.BooleanField(default=False, null=True, blank=False)
-    # order_id = models.CharField(max_length=200, null=True)
 
     def __str__(self):
         return str(self.id)
@@ -69,17 +58,3 @@ class OrderItem(models.Model):
     def get_total(self):
         total = self.product.price * self.quantity
         return total
-
-
-# class ShippingAddress(models.Model):
-#     customer = models.ForeignKey(
-#         User, on_delete=models.SET_NULL, blank=True, null=True)
-#     order = models.ForeignKey(
-#         Order, on_delete=models.SET_NULL, blank=True, null=True)
-#     address = models.CharField(max_length=200, null=True)
-#     county = models.CharField(max_length=200, null=True)
-#     eircode = models.CharField(max_length=200, null=True)
-#     date_added = models.DateField(auto_now_add=True)
-
-#     def __str__(self):
-#         return self.address

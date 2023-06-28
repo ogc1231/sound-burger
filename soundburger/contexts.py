@@ -1,8 +1,6 @@
-# from django.shortcuts import get_object_or_404
 from menu.models import Order
 
 
-# get total number of cart items
 def cart_items(request):
     if request.user.is_authenticated:
         order = Order.objects.filter(
