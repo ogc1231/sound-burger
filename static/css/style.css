@@ -4,15 +4,16 @@ body {
     font-family: 'lato', cursive;
 }
 
-h1, h2, h3, h4, button {
+/* Headings & Buttons */
+h1,
+h2,
+h3,
+h4,
+button {
     font-family: 'Baloo Tamma 2', cursive;
 }
 
-.notification {
-    border: 2px solid black;
-    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
-}
-
+/* Cart item quanity number */
 .cart-num {
     display: block;
     text-align: center;
@@ -21,10 +22,17 @@ h1, h2, h3, h4, button {
     border-radius: 50%;
 }
 
+/* Review cards */
+.notification {
+    border: 2px solid black;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
 .not-1 {
     height: 100%;
 }
 
+/* Delete Review Modal */
 .modal {
     z-index: 9999 !important;
 }
