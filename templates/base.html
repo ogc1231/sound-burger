@@ -23,45 +23,35 @@
 <body class="has-background-warning">
 
   <header class="hero container">
-    <nav class="navbar" aria-label="main navigation">
-      <div class="navbar-brand">
-        <h1 class="title">
-          <a class="navbar-item" href="{% url 'home' %}">SoundBurger</a>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary has-background-warning  mx-2 mt-4">
+      <div class="container-fluid">
+        <h1>
+          <a class="navbar-brand title is-size-1" href="{% url 'home' %}">SoundBurger</a>
         </h1>
-
-        <a role="button" class="navbar-burger" id="burger-menu" aria-label="menu" aria-expanded="false"
-          data-target="navbarBasicExample">
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-        </a>
-      </div>
-
-      <div class="navbar-menu" id="nav-links">
-        <div class="navbar-start">
-          <a class="navbar-item subtitle" href="{% url 'home' %}">
-            Home
-          </a>
-
-          <a class="navbar-item subtitle" href="{% url 'get_menu_list' %}">
-            Menu
-          </a>
-
-          <a class="navbar-item subtitle" href="{% url 'get_review_list' %}">
-            Reviews
-          </a>
-          {% if user.is_authenticated %}
-          <a class="navbar-item subtitle is-flex" href="{% url 'cart' %}">
-            <i class="bi bi-basket"></i>
-            <p class="cart-num mb-4 is-size-6 has-background-black has-text-white" id="cart-num">{{ cart_items }}</p>
-          </a>
-
+        <button class="navbar-toggler has-background-danger" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="navbar-item subtitle is-size-4" href="{% url 'home' %}">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="navbar-item subtitle is-size-4" href="{% url 'get_menu_list' %}">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="navbar-item subtitle is-size-4" href="{% url 'get_review_list' %}">Reviews</a>
+            </li>
+            <li class="nav-item">
+              {% if user.is_authenticated %}
+              <a class="navbar-item subtitle is-flex" href="{% url 'cart' %}">
+                <i class="bi bi-basket"></i>
+                <p class="cart-num mb-4 is-size-6 has-background-black has-text-white" id="cart-num">{{ cart_items }}</p>
+              </a>
           {% endif %}
-          <div></div>
-        </div>
-        <div class="navbar-end">
-          <div class="navbar-item">
-            <div class="buttons">
+            </li>
+          </ul>
+          <div class="d-flex buttons">
               {% if user.is_authenticated %}
               <a class="button is-medium is-rounded is-danger" href="{% url 'account_logout' %}">
                 <strong>Logout</strong>
@@ -74,7 +64,6 @@
                 Log in
               </a>
               {% endif %}
-            </div>
           </div>
         </div>
       </div>
