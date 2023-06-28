@@ -40,7 +40,30 @@
                             {% if request.user == review.author %}
                             <div class="has-text-link mt-2">
                                 <a href="{% url 'edit_review' review.id %}" class="button is-primary is-outlined">Edit</a>
-                                <a href="{% url 'delete_review' review.id %}" class="button is-danger is-outlined">Delete</a>
+                                <a href="#" class="button is-danger is-outlined" data-bs-toggle="modal" data-bs-target="#modal-delete-{{ review.id }}">Delete</a>
+                                <div class="modal fade" id="modal-delete-{{ review.id }}" tabindex="-1"
+                                    aria-labelledby="modal-delete-label-{{ review.id }}" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h2 class="modal-title fs-5" id="modal-delete-label-{{ review.id }}">Delete Review</h2>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                Are you sure you want to delete your review?
+                                                <br>
+                                                <small>This action is permanent</small>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="button is-danger is-outlined"
+                                                    data-bs-dismiss="modal">Cancel</button>
+                                                <a href="{% url 'delete_review' review.id %}" class="button is-primary is-outlined">Delete</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
                             </div>
                             {% endif %}
                         </div>
