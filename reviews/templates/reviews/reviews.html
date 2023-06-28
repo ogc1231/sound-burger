@@ -46,19 +46,19 @@
                                     <div class="modal-dialog">
                                         <div class="modal-content">
                                             <div class="modal-header">
-                                                <h2 class="modal-title fs-5" id="modal-delete-label-{{ review.id }}">Delete Review</h2>
+                                                <h2 class="modal-title fs-5 has-text-grey-dark" id="modal-delete-label-{{ review.id }}">Delete Review</h2>
                                                 <button type="button" class="btn-close" data-bs-dismiss="modal"
                                                     aria-label="Close"></button>
                                             </div>
-                                            <div class="modal-body">
+                                            <div class="modal-body has-text-grey-dark">
                                                 Are you sure you want to delete your review?
                                                 <br>
                                                 <small>This action is permanent</small>
                                             </div>
                                             <div class="modal-footer">
-                                                <button type="button" class="button is-danger is-outlined"
+                                                <button type="button" class="button is-primary is-outlined"
                                                     data-bs-dismiss="modal">Cancel</button>
-                                                <a href="{% url 'delete_review' review.id %}" class="button is-primary is-outlined">Delete</a>
+                                                <a href="{% url 'delete_review' review.id %}" class="button is-danger is-outlined">Delete</a>
                                             </div>
                                         </div>
                                     </div>
