@@ -30,11 +30,11 @@
                             <p>{{ review.content }}</p>
                         </div>
                         <div>
-                            <time class="subtitle is-size-6">
+                            <time class="subtitle is-size-6" datetime="{{ review.created|date:'Y-m-d' }}">
                                 {% if review.created|date:"U" == review.updated|date:"U" %}
-                                <p>Created: {{ review.created|date:"F d, Y @ H:m" }}</p>
+                                Created: {{ review.created|date:"F d, Y @ H:m" }}
                                 {% else %}
-                                <p>Updated: {{ review.updated|date:"F d, Y @ H:m" }}</p>
+                                Updated: {{ review.updated|date:"F d, Y @ H:m" }}
                                 {% endif %}
                             </time>
                             {% if request.user == review.author %}
