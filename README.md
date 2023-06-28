@@ -204,7 +204,6 @@ Hint: the more, the merrier!
 - [Heroku](https://www.heroku.com) used for hosting the deployed back-end site.
 - [Cloudinary](https://cloudinary.com) used for online static file storage.
 
-
 ## Database Design
 
 Entity Relationship Diagrams (ERD) help to visualize database architecture before creating models.
@@ -269,17 +268,10 @@ Using Markdown formatting to represent an example ERD table using the Product mo
 ### GitHub Projects
 
 [GitHub Projects](https://github.com/ogc1231/sound-burger/projects) served as an Agile tool for this project.
-It isn't a specialized tool, but with the right tags and project creation/issue assignments, it can be made to work.
 
 Through it, user stories, issues, and milestone tasks were planned, then tracked on a weekly basis using the basic Kanban board.
 
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
-Consider adding a basic screenshot of your Projects Board.
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-![screenshot](documentation/gh-projects.png)
+![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/images/projectboard.PNG)
 
 ### GitHub Issues
 
