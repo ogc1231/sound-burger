@@ -36,8 +36,7 @@ I used the recommended [CSS Jigsaw Validator](https://jigsaw.w3.org/css-validato
 
 | File | Jigsaw URL | Screenshot | Notes |
 | --- | --- | --- | --- |
-| style.css | [Jigsaw](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fogc1231.github.io%2Fsound-burger) | ![screenshot](documentation/css-validation-style.png) | Pass: No Errors |
-| checkout.css | n/a | ![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/testing/css-jigsaw-validator.png) | Pass: No Errors |
+| style.css | [Jigsaw](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fogc1231.github.io%2Fsound-burger) | ![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/testing/css-jigsaw-validator.png) | Pass: No Errors |
 
 ### Python
 
@@ -118,16 +117,18 @@ Defensive programming was manually tested with the below user acceptance testing
 
 | Page | User Action | Expected Result | Pass/Fail | Comments |
 | --- | --- | --- | --- | --- |
-| Home Page/Navbar/Footer | | | | |
+| Home Page | | | | |
 | | Click on Logo | Redirection to Home page | Pass | |
 | | Click on Home link | Redirection to Home page | Pass | |
+| | Click on Order Now link in hero section | Redirection to Menu page | Pass | |
+| Navbar | | | | |
 | | Click on Menu link in navbar | Redirection to Menu page | Pass | |
 | | Click on Reviews link in navbar | Redirection to Reviews page | Pass | |
 | | Click on Basket icon in navbar | Redirection to Cart page | Pass | |
 | | Click on Logout link in navbar | Redirection to Logout page | Pass | |
 | | Click on Signup link in navbar | Redirection to Signup page | Pass | |
 | | Click on Signin  link in navbar | Redirection to Signin page | Pass | |
-| | Click on Order Now link in hero section | Redirection to Menu page | Pass | |
+| Footer | | | | |
 | | Click on Instagram Icon in footer | Redirection to Instagram Homepage | Pass | |
 | | Click on Facebook Icon in footer | Redirection to Facebook Homepage | Pass | |
 | | Click on Twitter Icon in footer | Redirection to Twitter Homepage | Pass | |
@@ -214,66 +215,6 @@ Defensive programming was manually tested with the below user acceptance testing
 | As a authenticated user I can see removed item from cart message so that I know the item have been removed from cart. | ![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/testing/user-24.png) |
 | As a authenticated user I can see added item to cart message so that I know the item have been added to cart.  | ![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/testing/user-25.png) |
 
-## Automated Testing
-
-I have conducted a series of automated tests on my application.
-
-I fully acknowledge and understand that, in a real-world scenario, an extensive set of additional tests would be more comprehensive.
-
-### Python (Unit Testing)
-
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
-Adjust the code below (file names, etc.) to match your own project files/folders.
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-I have used Django's built-in unit testing framework to test the application functionality.
-
-In order to run the tests, I ran the following command in the terminal each time:
-
-`python3 manage.py test reviews`
-
-To create the coverage report, I would then run the following commands:
-
-`coverage run --source=name-of-app manage.py test`
-
-`coverage report`
-
-To see the HTML version of the reports, and find out whether some pieces of code were missing, I ran the following commands:
-
-`coverage html`
-
-`python3 -m http.server`
-
-Below are the results from the various apps on my application that I've tested:
-
-| App | File | Coverage | Screenshot |
-| --- | --- | --- | --- |
-| Bag | test_forms.py | 99% | ![screenshot](documentation/py-test-bag-forms.png) |
-| Bag | test_models.py | 89% | ![screenshot](documentation/py-test-bag-models.png) |
-| Bag | test_urls.py | 100% | ![screenshot](documentation/py-test-bag-urls.png) |
-| Bag | test_views.py | 71% | ![screenshot](documentation/py-test-bag-views.png) |
-| Checkout | test_forms.py | 99% | ![screenshot](documentation/py-test-checkout-forms.png) |
-| Checkout | test_models.py | 89% | ![screenshot](documentation/py-test-checkout-models.png) |
-| Checkout | test_urls.py | 100% | ![screenshot](documentation/py-test-checkout-urls.png) |
-| Checkout | test_views.py | 71% | ![screenshot](documentation/py-test-checkout-views.png) |
-| Home | test_forms.py | 99% | ![screenshot](documentation/py-test-home-forms.png) |
-| Home | test_models.py | 89% | ![screenshot](documentation/py-test-home-models.png) |
-| Home | test_urls.py | 100% | ![screenshot](documentation/py-test-home-urls.png) |
-| Home | test_views.py | 71% | ![screenshot](documentation/py-test-home-views.png) |
-| Products | test_forms.py | 99% | ![screenshot](documentation/py-test-products-forms.png) |
-| Products | test_models.py | 89% | ![screenshot](documentation/py-test-products-models.png) |
-| Products | test_urls.py | 100% | ![screenshot](documentation/py-test-products-urls.png) |
-| Products | test_views.py | 71% | ![screenshot](documentation/py-test-products-views.png) |
-| Profiles | test_forms.py | 99% | ![screenshot](documentation/py-test-profiles-forms.png) |
-| Profiles | test_models.py | 89% | ![screenshot](documentation/py-test-profiles-models.png) |
-| Profiles | test_urls.py | 100% | ![screenshot](documentation/py-test-profiles-urls.png) |
-| Profiles | test_views.py | 71% | ![screenshot](documentation/py-test-profiles-views.png) |
-| x | x | x | repeat for all remaining tested apps/files |
-
-#### Unit Test Issues
-
 ## Bugs
 
 ### Unfixed Bugs
@@ -297,6 +238,8 @@ There are no more remaining bugs that I am aware of.
 **Open Issues**
 
 Any remaining open issues can be tracked [here](https://github.com/ogc1231/sound-burger/issues).
+
+The unclosed issues are unfixed bugs and features that where NOT added at this time but are possible future features.
 
 | Issue | Status |
 | --- | --- |
@@ -353,5 +296,5 @@ Milestones were used to break the development down into small managable chunks f
 | [Second Iteration](https://github.com/ogc1231/sound-burger/milestone/2) | Closed |
 | [Third Iteration](https://github.com/ogc1231/sound-burger/milestone/5) | Closed |
 | [Bugs](https://github.com/ogc1231/sound-burger/milestone/6) | Open |
-| [https://github.com/ogc1231/sound-burger/milestone/4](https://github.com/ogc1231/sound-burger/milestone/6) | Closed |
+| [Setup & Deployment](https://github.com/ogc1231/sound-burger/milestone/4) | Closed |
 | [Documentation & Testing](https://github.com/ogc1231/sound-burger/milestone/3) | Closed |
