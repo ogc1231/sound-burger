@@ -227,7 +227,7 @@ IMPORTANT: Remember to always include a screenshot of each individual feature!
 
     - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
 
-![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/screenshots/edit-review-page.png)
+![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/screenshots/message-delete.png)
 
 - **Signup Page**
 
@@ -276,6 +276,24 @@ IMPORTANT: Remember to always include a screenshot of each individual feature!
     - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
 
 ![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/screenshots/message-complete.png)
+
+- **Navbar**
+
+    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+
+![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/screenshots/navbar-full.png)
+
+- **Navbar Mobile**
+
+    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+
+![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/screenshots/navbar-mobile.png)
+
+- **Footer**
+
+    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+
+![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/screenshots/footer.png)
 
 
 ### Future Features
