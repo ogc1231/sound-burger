@@ -336,59 +336,123 @@ IMPORTANT: Remember to always include a screenshot of each individual feature!
 Entity Relationship Diagrams (ERD) help to visualize database architecture before creating models.
 Understanding the relationships between different tables can save time later in the project.
 
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
 
-Using your defined models (one example below), create an ERD with the relationships identified.
+- [Draw.io](https://draw.io) was used to create the Entity Relationship Diagram
 
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/testing/ERD.png)
 
 ```python
-class Product(models.Model):
-    category = models.ForeignKey(
-        "Category", null=True, blank=True, on_delete=models.SET_NULL)
-    sku = models.CharField(max_length=254, null=True, blank=True)
-    name = models.CharField(max_length=254)
-    description = models.TextField()
-    has_sizes = models.BooleanField(default=False, null=True, blank=True)
-    price = models.DecimalField(max_digits=6, decimal_places=2)
-    rating = models.DecimalField(
-        max_digits=6, decimal_places=2, null=True, blank=True)
-    image_url = models.URLField(max_length=1024, null=True, blank=True)
-    image = models.ImageField(null=True, blank=True)
+class Food(models.Model):
+    TYPES = (('burger', 'Burger'), ('side', 'Side'), ('drink', 'Drink'))
+    food_type = models.CharField(
+        choices=TYPES, max_length=10, null=False, blank=False)
+    name = models.CharField(max_length=100, null=False, blank=False)
+    desc = models.TextField()
+    price = models.FloatField()
+    last_modified = models.DateTimeField(auto_now=True)
+    created = models.DateTimeField(auto_now_add=True)
+    item_image = CloudinaryField('image', default='placeholder')
+    is_public = models.BooleanField(default=True)
+
+    class Meta:
+        ordering = ['created']
 
     def __str__(self):
         return self.name
 ```
-
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
-A couple recommendations for building free ERDs:
-- [Draw.io](https://draw.io)
-- [Lucidchart](https://www.lucidchart.com/pages/ER-diagram-symbols-and-meaning)
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-![screenshot](documentation/erd.png)
-
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
-Using Markdown formatting to represent an example ERD table using the Product model above:
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
 - Table: **Product**
 
     | **PK** | **id** (unique) | Type | Notes |
     | --- | --- | --- | --- |
-    | **FK** | category | ForeignKey | FK to **Category** model |
+    | **FK** | customer | ForeignKey | FK to imported **User** model |
     | | sku | CharField | |
     | | name | CharField | |
-    | | description | TextField | |
-    | | has_sizes | BooleanField | |
-    | | price | DecimalField | |
-    | | rating | DecimalField | |
-    | | image_url | URLField | |
-    | | image | ImageField | |
+    | | desc | TextField | |
+    | | price | FloatField | |
+    | | last_modified | DateTimeField| |
+    | | created | DateTimeField | |
+    | | item_image | ImageField | |
+    | | is_public | BooleanField | |
+
+```python
+class Order(models.Model):
+    customer = models.ForeignKey(
+        User, on_delete=models.SET_NULL, blank=True, null=True)
+    date_ordered = models.DateField(auto_now_add=True)
+    complete = models.BooleanField(default=False, null=True, blank=False)
+
+    def __str__(self):
+        return str(self.id)
+
+    @property
+    def get_cart_total(self):
+        orderitems = self.orderitem_set.all()
+        total = sum([item.get_total for item in orderitems])
+        return total
+
+    def get_cart_items(self):
+        orderitems = self.orderitem_set.all()
+        total = sum([item.quantity for item in orderitems])
+        return total
+```
+- Table: **Order**
+
+    | **PK** | **id** (unique) | Type | Notes |
+    | --- | --- | --- | --- |
+    | **FK** | customer | ForeignKey | FK to imported **User** model |
+    | | date_ordered | DateField | |
+    | | complete | BooleanField | |
+
+```python
+class OrderItem(models.Model):
+    product = models.ForeignKey(
+        Food, on_delete=models.SET_NULL, blank=True, null=True)
+    order = models.ForeignKey(
+        Order, on_delete=models.SET_NULL, blank=True, null=True)
+    quantity = models.IntegerField(default=0, null=True, blank=True)
+    date_added = models.DateField(auto_now_add=True)
+
+    def __str__(self):
+        return self.product.name
+
+    @property
+    def get_total(self):
+        total = self.product.price * self.quantity
+        return total
+```
+- Table: **Product**
+
+    | **PK** | **id** (unique) | Type | Notes |
+    | --- | --- | --- | --- |
+    | **FK** | product | ForeignKey | FK to **Food** model |
+    | **FK** | order | ForeignKey | FK to **Order** model |
+    | | quantity | IntegerField | |
+    | | date_added | DateField | |
+  
+
+```python
+class Review(models.Model):
+    title = models.CharField(max_length=100, null=False, unique=True)
+    author = models.ForeignKey(
+        User, on_delete=models.CASCADE, related_name="posted", null=True)
+    content = models.TextField(null=True)
+    created = models.DateTimeField(auto_now_add=True)
+    updated = models.DateTimeField(auto_now=True)
+    is_public = models.BooleanField(default=False)
+
+    def __str__(self):
+        return self.title
+```
+- Table: **Product**
+
+    | **PK** | **id** (unique) | Type | Notes |
+    | --- | --- | --- | --- |
+    | **FK** | author | ForeignKey | FK to imported **User** model |
+    | | title | CharField | |
+    | | content | TextField | |
+    | | created | DateTimeField | |
+    | | updated | DateTimeField | |
+    | | is_public | BooleanField | |
 
 ## Agile Development Process
 
