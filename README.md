@@ -157,31 +157,126 @@ IMPORTANT: Remember to always include a screenshot of each individual feature!
 
 ### Existing Features
 
-- **Title for feature #1**
+- **Home Page**
 
     - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
 
-![screenshot](documentation/feature01.png)
+![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/screenshots/homepage.png)
 
-- **Title for feature #2**
-
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
-
-![screenshot](documentation/feature02.png)
-
-- **Title for feature #3**
+- **Home Page Logged In**
 
     - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
 
-![screenshot](documentation/feature03.png)
+![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/screenshots/homepage-loggedin.png)
 
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
+- **Menu Page**
 
-Repeat as necessary for as many features as your site contains.
+    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
 
-Hint: the more, the merrier!
+![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/screenshots/menu-page.png)
 
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+- **Menu Page Logged In**
+
+    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+
+![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/screenshots/menu-page-loggedin.png)
+
+- **Empty Cart Page**
+
+    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+
+![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/screenshots/cart-empty.png)
+
+- **Full Cart Page**
+
+    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+
+![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/screenshots/cart-full.png)
+
+- **Checkout Page**
+
+    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+
+![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/screenshots/checkout-page.png)
+
+- **Reviews Page**
+
+    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+
+![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/screenshots/review-page.png)
+
+- **Reviews Page Logged In**
+
+    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+
+![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/screenshots/review-page-loggedin.png)
+
+- **Write Review Page**
+
+    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+
+![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/screenshots/add-review-page.png)
+
+- **Edit Review Page**
+
+    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+
+![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/screenshots/edit-review-page.png)
+
+- **Delete Review Confirmation Modal**
+
+    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+
+![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/screenshots/edit-review-page.png)
+
+- **Signup Page**
+
+    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+
+![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/screenshots/signup-page.png)
+
+- **Login Page**
+
+    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+
+![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/screenshots/login-page.png)
+
+- **Logout Page**
+
+    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+
+![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/screenshots/signout-page.png)
+
+- **Successfully Signed In Message**
+
+    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+
+![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/screenshots/message-signin.png)
+
+- **Successfully Signed Out Message**
+
+    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+
+![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/screenshots/message-signout.png)
+
+- **Added To Cart Message**
+
+    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+
+![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/screenshots/message-added.png)
+
+- **Removed From Cart Message**
+
+    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+
+![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/screenshots/message-removed.png)
+
+- **Order Complete Message**
+
+    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+
+![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/screenshots/message-complete.png)
+
 
 ### Future Features
 
