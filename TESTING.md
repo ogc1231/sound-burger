@@ -135,12 +135,23 @@ I have used the recommended [PEP8 CI Python Linter](https://pep8ci.herokuapp.com
 
 | File | CI URL | Screenshot | Notes |
 | --- | --- | --- | --- |
-| run.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/ogc1231/sound-burger/main/run.py) | ![screenshot](documentation/py-validation-run.png) | W291 trailing whitespace |
-| settings.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/ogc1231/sound-burger/main/boutique-ado/settings.py) | ![screenshot](documentation/py-validation-settings.png) | E501 line too long |
-| Blog views.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/ogc1231/sound-burger/main/blog/views.py) | ![screenshot](documentation/py-validation-blog-views.png) | Pass: No Errors |
-| Checkout urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/ogc1231/sound-burger/main/checkout/urls.py) | ![screenshot](documentation/py-validation-checkout-urls.png) | W292 no newline at end of file |
-| Profiles models.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/ogc1231/sound-burger/main/profiles/models.py) | ![screenshot](documentation/py-validation-profiles-models.png) | Pass: No Errors |
-| x | x | x | repeat for all remaining Python files |
+| admin.py (home) | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/ogc1231/sound-burger/home/admin.py) | ![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/testing/home-admin.png) | All clear, no errors found|
+| models.py (home) | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/ogc1231/sound-burger/home/models.py) | ![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/testing/home-models.png) | All clear, no errors found|
+| views.py (home) | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/ogc1231/sound-burger/home/views.py) | ![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/testing/home-views.png) | All clear, no errors found|
+| admin.py (menu) | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/ogc1231/sound-burger/menu/admin.py) | ![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/testing/menu-admin.png) | All clear, no errors found|
+| models.py (menu) | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/ogc1231/sound-burger/menu/models.py) | ![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/testing/menu-models.png) | All clear, no errors found|
+| views.py (menu) | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/ogc1231/sound-burger/menu/views.py) | ![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/testing/menu-views.png) | All clear, no errors found|
+| admin.py (reviews) | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/ogc1231/sound-burger/reviews/admin.py) | ![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/testing/reviews-admin.png) | All clear, no errors found|
+| models.py (reviews) | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/ogc1231/sound-burger/reviews/models.py) | ![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/testing/reviews-models.png) | All clear, no errors found|
+| views.py (reviews) | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/ogc1231/sound-burger/reviews/views.py) | ![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/testing/reviews-views.png) | All clear, no errors found|
+| forms.py (reviews) | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/ogc1231/sound-burger/reviews/forms.py) | ![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/testing/reviews-forms.png) | All clear, no errors found|
+| contexts.py (soundburger) | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/ogc1231/sound-burger/soundburger/contexts.py) | ![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/testing/soundburger-context.png) | All clear, no errors found|
+| settings.py (soundburger) | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/ogc1231/sound-burger/soundburger/settings.py) | ![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/testing/soundburger-settings.png) | All clear, no errors found|
+| urls.py (soundburger) | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/ogc1231/sound-burger/soundburger/urls.py) | ![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/testing/soundburger-urls.png) | All clear, no errors found|
+
+
+
+
 
 **IMPORTANT**: Django settings.py
 
