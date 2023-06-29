@@ -1,15 +1,5 @@
 # Testing
 
-Return back to the [README.md](README.md) file.
-
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
-In this section, you need to convince the assessors that you have conducted enough testing to legitimately believe that the site works well.
-Essentially, in this part, you should go over all of your project's features, and ensure that they all work as intended,
-with the project providing an easy and straightforward way for the users to achieve their goals.
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
 ## Code Validation
 
 ⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
@@ -130,7 +120,6 @@ I've tested my deployed project on multiple devices to check for responsiveness 
 | 2k Monitor | ![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/testing/xl-monitor-home.png) | Scaling starts to have minor issues with font sizes |
 | 2k Monitor | ![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/testing/xl-monitor-menu.png) | Scaling starts to have minor issues with font sizes |
 
-
 ## Lighthouse Audit
 
 ⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
@@ -154,13 +143,37 @@ I've tested my deployed project using the Lighthouse Audit tool to check for any
 
 | Page | Size | Screenshot | Notes |
 | --- | --- | --- | --- |
-| Home | Mobile | ![screenshot](documentation/lighthouse-home-mobile.png) | Some minor warnings |
-| Home | Desktop | ![screenshot](documentation/lighthouse-home-desktop.png) | Few warnings |
-| About | Mobile | ![screenshot](documentation/lighthouse-about-mobile.png) | Some minor warnings |
-| About | Desktop | ![screenshot](documentation/lighthouse-about-desktop.png) | Few warnings |
-| Gallery | Mobile | ![screenshot](documentation/lighthouse-gallery-mobile.png) | Slow response time due to large images |
-| Gallery | Desktop | ![screenshot](documentation/lighthouse-gallery-desktop.png) | Slow response time due to large images |
-| x | x | x | repeat for any other tested pages/sizes |
+| Home | Mobile | ![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/testing/mobile-home.PNG) | Some minor warnings |
+| Home | Desktop | ![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/testing/desktop-home.PNG) | No major warnings |
+
+| Menu | Mobile | ![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/testing/mobile-menu.PNG) | No major warnings |
+| Menu | Desktop | ![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/testing/desktop-menu.PNG) | No major warnings |
+
+| Cart | Mobile | ![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/testing/mobile-cart.PNG) | No major warnings |
+| Cart | Desktop | ![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/testing/desktop-cart.PNG) | No major warnings |
+
+| Checkout | Mobile | ![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/testing/mobile-checkout.PNG) | No major warnings |
+| Checkout | Desktop | ![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/testing/desktop-checkout.PNG) | No major warnings |
+
+| Reviews | Mobile | ![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/testing/mobile-reviews.PNG) | No major warnings |
+| Reviews | Desktop | ![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/testing/desktop-reviews.PNG) | No major warnings |
+
+| Add Review | Mobile | ![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/testing/mobile-add.PNG) | No major warnings |
+| Add Review | Desktop | ![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/testing/desktop-add.PNG) | No major warning |
+
+| Edit Review  | Mobile | ![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/testing/mobile-edit.PNG) | No major warnings |
+| Edit Review  | Desktop | ![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/testing/desktop-edit.PNG) | No major warnings |
+
+| Signin  | Mobile | ![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/testing/mobile-signin.PNG) | No major warnings |
+| Signin | Desktop | ![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/testing/desktop-signin.PNG) | No major warnings |
+
+| Signout  | Mobile | ![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/testing/mobile-signout.PNG) | No major warnings |
+| Signout  | Desktop | ![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/testing/desktop-signout.PNG) | No major warnings |
+
+| Signup  | Mobile | ![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/testing/mobile-signup.PNG) | No major warnings |
+| Signup  | Desktop | ![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/testing/desktop-signup.PNG) | No major warnings |
+
+
 
 ## Defensive Programming
 
