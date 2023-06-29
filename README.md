@@ -79,59 +79,57 @@ I used [coolors.co](https://coolors.co/f14668-ffe08a-3e8ed0-48c78e-00d1b2-4a4a4a
 ## Wireframes
 
 To follow best practice, wireframes were developed for mobile, tablet, and desktop sizes.
-I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wireframes.
+I've used [Mockitt](https://mockitt.wondershare.com) to design my site wireframes.
 
 ### Home Page Wireframes
 
 | Size | Screenshot |
 | --- | --- |
-| Mobile | ![screenshot](documentation/wireframes/mobile-home.png) |
-| Desktop | ![screenshot](documentation/wireframes/desktop-home.png) |
+| Mobile | ![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/wireframes/homepage-mobile.PNG) |
+| Desktop | ![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/wireframes/homepage-desktop.PNG) |
 
 ### Menu Page Wireframes
 
 | Size | Screenshot |
 | --- | --- |
-| Mobile | ![screenshot](documentation/wireframes/mobile-about.png) |
-| Desktop | ![screenshot](documentation/wireframes/desktop-about.png) |
+| Mobile | ![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/wireframes/menu-mobile.PNG) |
+| Desktop | ![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/wireframes/menu-desktop.PNG) |
 
 ### Review Page Wireframes
 
 | Size | Screenshot |
 | --- | --- |
-| Mobile | ![screenshot](documentation/wireframes/mobile-contact.png) |
-| Desktop | ![screenshot](documentation/wireframes/desktop-contact.png) |
+| Mobile | ![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/wireframes/reviews-mobile.PNG) |
+| Desktop | ![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/wireframes/review-desktop.PNG) |
 
 ### Add Review Page Wireframes
 
 | Size | Screenshot |
 | --- | --- |
-| Mobile | ![screenshot](documentation/wireframes/mobile-contact.png) |
-| Desktop | ![screenshot](documentation/wireframes/desktop-contact.png) |
+| Mobile | ![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/wireframes/add-mobile.PNG) |
+| Desktop | ![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/wireframes/add-desktop.PNG) |
 
 ### Edit Review Page Wireframes
 
 | Size | Screenshot |
 | --- | --- |
-| Mobile | ![screenshot](documentation/wireframes/mobile-contact.png) |
-| Desktop | ![screenshot](documentation/wireframes/desktop-contact.png) |
+| Mobile | ![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/wireframes/edit-mobile.PNG) |
+| Desktop | ![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/wireframes/edit-desktop.PNG) |
 
 
 ### Cart Page Wireframes
 
 | Size | Screenshot |
 | --- | --- |
-| Mobile | ![screenshot](documentation/wireframes/mobile-contact.png) |
-| Tablet | ![screenshot](documentation/wireframes/tablet-contact.png) |
-| Desktop | ![screenshot](documentation/wireframes/desktop-contact.png) |
+| Mobile | ![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/wireframes/cart-mobile.PNG) |
+| Desktop | ![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/wireframes/cart-desktop.PNG) |
 
 ### Checkout Page Wireframes
 
 | Size | Screenshot |
 | --- | --- |
-| Mobile | ![screenshot](documentation/wireframes/mobile-contact.png) |
-| Tablet | ![screenshot](documentation/wireframes/tablet-contact.png) |
-| Desktop | ![screenshot](documentation/wireframes/desktop-contact.png) |
+| Mobile | ![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/wireframes/checkout-mobile.PNG) |
+| Desktop | ![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/wireframes/checkout-desktop.PNG) |
 
 ## Features
 
