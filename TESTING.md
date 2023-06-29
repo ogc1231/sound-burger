@@ -114,91 +114,76 @@ The deployed project was tested using the Lighthouse Audit tool to check for any
 
 ## Defensive Programming
 
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
-Defensive programming (defensive design) is extremely important!
-
-When building projects that accept user inputs or forms, you should always test the level of security for each.
-Examples of this could include (not limited to):
-
-Forms:
-- Users cannot submit an empty form
-- Users must enter valid email addresses
-
-PP3 (Python-only):
-- Users must enter a valid letter/word/string when prompted
-- Users must choose from a specific list only
-
-Flask/Django:
-- Users cannot brute-force a URL to navigate to a restricted page
-- Users cannot perform CRUD functionality while logged-out
-- User-A should not be able to manipulate data belonging to User-B, or vice versa
-- Non-Authenticated users should not be able to access pages that require authentication
-- Standard users should not be able to access pages intended for superusers
-
-You'll want to test all functionality on your application, whether it's a standard form,
-or uses CRUD functionality for data manipulation on a database.
-Make sure to include the `required` attribute on any form-fields that should be mandatory.
-Try to access various pages on your site as different user types (User-A, User-B, guest user, admin, superuser).
-
-You should include any manual tests performed, and the expected results/outcome.
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
 Defensive programming was manually tested with the below user acceptance testing:
 
 | Page | User Action | Expected Result | Pass/Fail | Comments |
 | --- | --- | --- | --- | --- |
-| Home Page | | | | |
+| Home Page/Navbar/Footer | | | | |
 | | Click on Logo | Redirection to Home page | Pass | |
-| | Click on Home link in navbar | Redirection to Home page | Pass | |
-| Gallery Page | | | | |
-| | Click on Gallery link in navbar | Redirection to Gallery page | Pass | |
-| | Load gallery images | All images load as expected | Pass | |
-| Contact Page | | | | |
-| | Click on Contact link in navbar | Redirection to Contact page | Pass | |
-| | Enter first/last name | Field will accept freeform text | Pass | |
-| | Enter valid email address | Field will only accept email address format | Pass | |
-| | Enter message in textarea | Field will accept freeform text | Pass | |
-| | Click the Submit button | Redirects user to form-dump | Pass | User must click 'Back' button to return |
-| Sign Up | | | | |
-| | Click on Sign Up button | Redirection to Sign Up page | Pass | |
+| | Click on Home link | Redirection to Home page | Pass | |
+| | Click on Menu link in navbar | Redirection to Menu page | Pass | |
+| | Click on Reviews link in navbar | Redirection to Reviews page | Pass | |
+| | Click on Basket icon in navbar | Redirection to Cart page | Pass | |
+| | Click on Logout link in navbar | Redirection to Logout page | Pass | |
+| | Click on Signup link in navbar | Redirection to Signup page | Pass | |
+| | Click on Signin  link in navbar | Redirection to Signin page | Pass | |
+| | Click on Order Now link in hero section | Redirection to Menu page | Pass | |
+| | Click on Instagram Icon in footer | Redirection to Instagram Homepage | Pass | |
+| | Click on Facebook Icon in footer | Redirection to Facebook Homepage | Pass | |
+| | Click on Twitter Icon in footer | Redirection to Twitter Homepage | Pass | |
+| | Click on Tik Tok Icon in footer | Redirection to Tik Tok Homepage | Pass | |
+| | Click on Oliver Craigie link in footer | Redirection to Oliver Craigie github page | Pass | |
+| Signup Page | | | | |
+| | Enter Username | Username is required | Pass | |
 | | Enter valid email address | Field will only accept email address format | Pass | |
 | | Enter valid password (twice) | Field will only accept password format | Pass | |
-| | Click on Sign Up button | Asks user to confirm email page | Pass | Email sent to user |
-| | Confirm email | Redirects user to blank Sign In page | Pass | |
-| Log In | | | | |
-| | Click on the Login link | Redirection to Login page | Pass | |
-| | Enter valid email address | Field will only accept email address format | Pass | |
-| | Enter valid password | Field will only accept password format | Pass | |
-| | Click Login button | Redirects user to home page | Pass | |
-| Log Out | | | | |
-| | Click Logout button | Redirects user to logout page | Pass | Confirms logout first |
-| | Click Confirm Logout button | Redirects user to home page | Pass | |
-| Profile | | | | |
-| | Click on Profile button | User will be redirected to the Profile page | Pass | |
-| | Click on the Edit button | User will be redirected to the edit profile page | Pass | |
-| | Click on the My Orders link | User will be redirected to the My Orders page | Pass | |
-| | Brute forcing the URL to get to another user's profile | User should be given an error | Pass | Redirects user back to own profile |
-
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
-Repeat for all other tests, as applicable to your own site.
-The aforementioned tests are just an example of a few different project scenarios.
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+| | Click Sign Up button on sign up page | Redirection to Home page | Pass | |
+| | Click Sign In link on sign up page | Redirection to Sign In page | Pass | |
+| Login Page | | | | |
+| | Enter correct username | Only accept correct username | Pass | |
+| | Enter correct password | Field will only accept correct password | Pass | |
+| | Click Login button on sign up page | Redirection to Home page | Pass | |
+| | Click Sign Up link on sign In page | Redirection to Sign Up page | Pass | |
+| Signout Page | | | | |
+| | Click on Logout button | Logs user out and redirects to Home page | Pass | |
+| Menu Page | | | | |
+| | Click Add to cart button | Adds item to cart and redirects to Cart Page | Pass | |
+| Cart Page | | | | |
+| | Click Bin icon button | Removes item from cart and stays on Cart Page | Pass | |
+| | Click Continue Shopping Button | Redirection to Menu page | Pass | |
+| | Click Checkout Button | Redirection to Checkout page | Pass | |
+| Checkout Page | | | | |
+| | Click return to cart Button | Redirection to Cart page | Pass | |
+| | Click Confirm Order Button | Submits order and redirects to Homepage | Pass | |
+| | Enter Name | Name is required | Pass | |
+| | Enter valid email address | Field will only accept email address format, email is required | Pass | |
+| | Enter Address line 1 | Address line 1 is required | Pass | |
+| | Enter Address line 2 | Address line 2 is NOT required | Pass | |
+| | Choose District | District is required | Pass | |
+| | Choose Eircode/Postcode | Eircode/Postcode is required | Pass | |
+| Reviews Page | | | | |
+| | Click Add a review Button | Redirection to Add Review page | Pass | |
+| | Click Edit Review Button | Redirection to Edit Review page | Pass | |
+| | Click Delete Review Button | Condirmation Modal pops up | Pass | |
+| Delete Review Confirmation modal | | | | |
+| | Click Cancel Button | Closes Modal and returns to Reviews Page | Pass | |
+| | Click Delete Button | Closes Modal, Deletes Review and returns to Reviews Page | Pass | |
+| Add Review Page | | | | |
+| | Click Cancel Button | Redirection to Review page | Pass | |
+| | Enter Title | Title is required | Pass | |
+| | Enter Content | Content is required | Pass | |
+| | Click Submit Review Button | Submits Review and redirects to Review page | Pass | |
+| Edit Review Page | | | | |
+| | Click Cancel Button | Redirection to Review page | Pass | |
+| | Click Update Review Button | Updates Review and redirects to Review page | Pass | |
+| Unauthenticated Users | | | | |
+| | Unauthenticated Users Tries to access Cart Page | Returns Server Error (500) | Pass | |
+| | Unauthenticated Users Tries to access Checkout Page | Returns Server Error (500) | Pass | |
+| | Unauthenticated Users Tries to access Add_Review Page | Can access Add Review Page | Fail | |
+| | Unauthenticated Users Tries to submit a Review | Returns Server Error (500) | Pass | | 
+| | Unauthenticated Users Tries to access Edit_Review Page | Returns Not Found Error | Pass | |
 
 ## User Story Testing
-
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
-Testing user stories is actually quite simple, once you've already got the stories defined on your README.
-
-Most of your project's **features** should already align with the **user stories**,
-so this should as simple as creating a table with the user story, matching with the re-used screenshot
-from the respective feature.
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
 
 | User Story | Screenshot |
 | --- | --- |
@@ -247,7 +232,7 @@ I have used Django's built-in unit testing framework to test the application fun
 
 In order to run the tests, I ran the following command in the terminal each time:
 
-`python3 manage.py test name-of-app `
+`python3 manage.py test reviews`
 
 To create the coverage report, I would then run the following commands:
 
@@ -288,15 +273,6 @@ Below are the results from the various apps on my application that I've tested:
 | x | x | x | repeat for all remaining tested apps/files |
 
 #### Unit Test Issues
-
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
-Use this section to list any known issues you ran into while writing your unit tests.
-Remember to include screenshots (where possible), and a solution to the issue (if known).
-
-This can be used for both "fixed" and "unresolved" issues.
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
 
 ## Bugs
 
