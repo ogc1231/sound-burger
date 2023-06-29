@@ -300,46 +300,21 @@ This can be used for both "fixed" and "unresolved" issues.
 
 ## Bugs
 
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
+### Unfixed Bugs
 
-It's very important to document any bugs you've discovered while developing the project.
-Make sure to include any necessary steps you've implemented to fix the bug(s) as well.
+- BUG: Incorrect times on reviews
 
-For JavaScript and Python applications, it's best to screenshot the errors to include them as well.
+    ![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/testing/bug.PNG)
 
-**PRO TIP**: screenshots of bugs are extremely helpful, and go a long way!
+    - Attempted to fix by adding "F d, Y @ H:m" form to updated & created times with no luck.
 
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+- BUG: Checkout page should be in two columns Shipping Address & Order Summary NOT two rows
 
-- JS Uncaught ReferenceError: `foobar` is undefined/not defined
+    ![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/testing/bug-2.png)
 
-    ![screenshot](documentation/bug01.png)
+    - Attempted to fix by adding flexbox to no result.
 
-    - To fix this, I _____________________.
-
-- JS `'let'` or `'const'` or `'template literal syntax'` or `'arrow function syntax (=>)'` is available in ES6 (use `'esversion: 11'`) or Mozilla JS extensions (use moz).
-
-    ![screenshot](documentation/bug02.png)
-
-    - To fix this, I _____________________.
-
-- Python `'ModuleNotFoundError'` when trying to import module from imported package
-
-    ![screenshot](documentation/bug03.png)
-
-    - To fix this, I _____________________.
-
-- Django `TemplateDoesNotExist` at /appname/path appname/template_name.html
-
-    ![screenshot](documentation/bug04.png)
-
-    - To fix this, I _____________________.
-
-- Python `E501 line too long` (93 > 79 characters)
-
-    ![screenshot](documentation/bug04.png)
-
-    - To fix this, I _____________________.
+There are no more remaining bugs that I am aware of.
 
 ### GitHub **Issues**
 
@@ -356,18 +331,17 @@ Any remaining open issues can be tracked [here](https://github.com/ogc1231/sound
 | [BUG: Incorrect times on reviews](https://github.com/ogc1231/sound-burger/issues/69) | Open |
 | [BUG: Checkout page should be in two columns Shipping Address & Order Summary NOT two rows](https://github.com/ogc1231/sound-burger/issues/70) | Open |
 
-## Unfixed Bugs
+**Closed Issues**
 
-- BUG: Incorrect times on reviews
+| Issue | Status |
+| --- | --- |
 
-    ![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/testing/bug.PNG)
-
-    - Attempted to fix by adding "F d, Y @ H:m" form to updated & created times with no luck.
-
-- BUG: Checkout page should be in two columns Shipping Address & Order Summary NOT two rows
-
-    ![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/testing/bug-2.png)
-
-    - Attempted to fix by adding flexbox to no result.
-
-There are no more remaining bugs that I am aware of.
+**Milestones**
+| Milestone | Status |
+| --- | --- |
+| [MVP Release](https://github.com/ogc1231/sound-burger/milestone/1) | Closed |
+| [Second Iteration](https://github.com/ogc1231/sound-burger/milestone/2) | Closed |
+| [Third Iteration](https://github.com/ogc1231/sound-burger/milestone/5) | Closed |
+| [Bugs](https://github.com/ogc1231/sound-burger/milestone/6) | Open |
+| [https://github.com/ogc1231/sound-burger/milestone/4](https://github.com/ogc1231/sound-burger/milestone/6) | Closed |
+| [Documentation & Testing](https://github.com/ogc1231/sound-burger/milestone/3) | Closed |
