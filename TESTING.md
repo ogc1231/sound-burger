@@ -217,14 +217,6 @@ Defensive programming was manually tested with the below user acceptance testing
 
 ## Bugs
 
-### Fixed Bugs
-
-- BUG3: Cart no responsive enough for small mobile screens
-
-    ![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/testing/bug-3.png)
-
-    - Fixed by change Quanity to Qty in cart and reduce font-size on mobile only for cart table
-
 ### Unfixed Bugs
 
 - BUG1: Incorrect times on reviews, time always end in 06.
@@ -240,6 +232,14 @@ Defensive programming was manually tested with the below user acceptance testing
     - Attempted to fix by adding flexbox to no result.
 
 There are no more remaining bugs that I am aware of.
+
+### Fixed Bugs
+
+- BUG3: Cart not responsive enough for small mobile screens
+
+    ![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/testing/bug-3.png)
+
+    - Fixed by change Quanity to Qty in cart and reduce font-size on mobile only for cart table
 
 ### GitHub **Issues**
 
