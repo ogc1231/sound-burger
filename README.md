@@ -159,139 +159,139 @@ IMPORTANT: Remember to always include a screenshot of each individual feature!
 
 - **Home Page**
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+    - This is where the user will be brought to when first entering the website. The user eyes will be drawn to the hero section and order now call to action, from the homepage user has access to the required pages such as menu, reviews, login and signup pages.
 
 ![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/screenshots/homepage.png)
 
 - **Home Page Logged In**
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+    - Same as homepage except now the user can logout of their account and had access the cart which is available for logged in users only.
 
 ![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/screenshots/homepage-loggedin.png)
 
 - **Menu Page**
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+    - Shows menu items available at SoundBurger, burgers, drinks & sides.
 
 ![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/screenshots/menu-page.png)
 
 - **Menu Page Logged In**
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+    - Logged users can see add to cart buttons, when clicked this will add that items to the users cart.
 
 ![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/screenshots/menu-page-loggedin.png)
 
 - **Empty Cart Page**
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+    - If user has not added any items to their cart, the cart will be empty.
 
 ![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/screenshots/cart-empty.png)
 
 - **Full Cart Page**
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+    - Shows all items user has added to their cart including items type, quanity, price, total items and total price. User can also continue to checkout or continue shopping by clicking the corresponding buttons. User can also remove items from cart by pressing red bin buttons beside each item in the cart.
 
 ![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/screenshots/cart-full.png)
 
 - **Checkout Page**
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+    - Similiar to the cart page but instead has an order summary of items added the cart and allows users to enter in shipping address and confirm order.
 
 ![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/screenshots/checkout-page.png)
 
 - **Reviews Page**
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+    - Shows reviews left by users, can leave a review if user has an account.
 
 ![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/screenshots/review-page.png)
 
 - **Reviews Page Logged In**
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+    - User will see option to add a review or edit/delete a review if they have already posted a review.
 
 ![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/screenshots/review-page-loggedin.png)
 
 - **Write Review Page**
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+    - Logged in user can write a review or cancel which will return them to the review page.
 
 ![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/screenshots/add-review-page.png)
 
 - **Edit Review Page**
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+    - If user have prevousily left a review they can edit the review by clicking the edit button on their review. They can then choose to post the updates or cancel the update.
 
 ![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/screenshots/edit-review-page.png)
 
 - **Delete Review Confirmation Modal**
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+    - User can delete prevousily posted review by clicking the delete button the review, a modal will appear confirming user wants to the delete the review, they can confirm delete or cancel so review is not deleted.
 
 ![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/screenshots/message-delete.png)
 
 - **Signup Page**
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+    - New user can signup for an account.
 
 ![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/screenshots/signup-page.png)
 
 - **Login Page**
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+    - Returning users can sign into their accounts.
 
 ![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/screenshots/login-page.png)
 
 - **Logout Page**
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+    - Users can logout of their accounts when they want, signout must confirmed before signout in completed.
 
 ![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/screenshots/signout-page.png)
 
 - **Successfully Signed In Message**
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+    - Message appears when user has successfully signed in, the message will show what username they have signed in with.
 
 ![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/screenshots/message-signin.png)
 
 - **Successfully Signed Out Message**
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+    - Message appears when user has successfully signed out.
 
 ![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/screenshots/message-signout.png)
 
 - **Added To Cart Message**
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+    - Message appears when user has added an item to the cart.
 
 ![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/screenshots/message-added.png)
 
 - **Removed From Cart Message**
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+    - Message appears when user has removed an item from the cart.
 
 ![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/screenshots/message-removed.png)
 
 - **Order Complete Message**
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+    - Message appears when user correctly entered shipping address and clciked confirm order button.
 
 ![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/screenshots/message-complete.png)
 
 - **Navbar**
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+    - Links to all main pages users need access to, logged in user will see the basket and logout link/button, while new users will not see the basket and instead of logout will see signup and login buttons.
 
 ![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/screenshots/navbar-full.png)
 
 - **Navbar Mobile**
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+    - Navbar transforms into a burger menu on mobile and tablet, which expands/closes on click.
 
 ![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/screenshots/navbar-mobile.png)
 
 - **Footer**
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+    - Social media and developer links.
 
 ![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/screenshots/footer.png)
 
@@ -305,7 +305,7 @@ IMPORTANT: Remember to always include a screenshot of each individual feature!
 - Delete Account
     - User can delete their own account if needed.
 - About Page
-    - Page explaing the backgorund and mission of SoundBurger.
+    - Page explaing the background and mission of SoundBurger.
 - Pickup Option
     - User can choose to pickup order instead of having it delivered.
 - Click to reorder
