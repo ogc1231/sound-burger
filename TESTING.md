@@ -219,13 +219,13 @@ Defensive programming was manually tested with the below user acceptance testing
 
 ### Unfixed Bugs
 
-- BUG: Incorrect times on reviews
+- BUG1: Incorrect times on reviews, time always end in 06.
 
     ![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/testing/bug.PNG)
 
     - Attempted to fix by adding "F d, Y @ H:m" form to updated & created times with no luck.
 
-- BUG: Checkout page should be in two columns Shipping Address & Order Summary NOT two rows
+- BUG2: Checkout page should be in two columns Shipping Address & Order Summary NOT two rows
 
     ![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/testing/bug-2.png)
 
