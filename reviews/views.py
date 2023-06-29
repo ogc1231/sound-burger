@@ -20,7 +20,7 @@ def add_review(request):
             form.instance.author = request.user
             form.save()
             messages.success(request, 'Review added')
-
+            return redirect('get_review_list')
     form = ReviewForm()
     context = {
         'form': form
