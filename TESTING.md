@@ -2,55 +2,22 @@
 
 ## Code Validation
 
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
-Use the space to discuss code validation for any of your own code files (where applicable).
-You are not required to validate external libraries/frameworks, such as imported Bootstrap, Materialize, Font Awesome, etc.
-
-**IMPORTANT**: You must provide a screenshot for each file you validate.
-
-**PRO TIP**: Always validate the live site pages, not your local code. There could be subtle/hidden differences.
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
 ### HTML
 
 I have used the recommended [HTML W3C Validator](https://validator.w3.org) to validate all of my HTML files.
 
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
-- If you are copying/pasting your HTML code, use this link: https://validator.w3.org/#validate_by_input
-- (*recommended*) If you are using the live deployed site pages, use this link: https://validator.w3.org/#validate_by_uri
-
-It's recommended to validate the live pages (each of them) using the deployed URL.
-This will give you a custom URL as well, which you can use on your testing documentation.
-It makes it easier to return back to a page to validate it again in the future.
-The URL will look something like this:
-
-- https://validator.w3.org/nu/?doc=https%3A%2F%2Fogc1231.github.io%2Fsound-burger%2Findex.html
-
-Sample HTML code validation documentation (tables are extremely helpful!):
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
 | Page | W3C URL | Screenshot | Notes |
 | --- | --- | --- | --- |
-| Home | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fogc1231.github.io%2Fsound-burger%2Findex.html) | ![screenshot](documentation/html-validation-home.png) | Section lacks header h2-h6 warning |
-| Contact | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fogc1231.github.io%2Fsound-burger%2Fcontact.html) | ![screenshot](documentation/html-validation-contact.png) | obsolete iframe warnings |
-| Quiz | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fogc1231.github.io%2Fsound-burger%2Fquiz.html) | ![screenshot](documentation/html-validation-quiz.png) | Pass: No Errors |
-| Add Blog | n/a | ![screenshot](documentation/html-validation-add-blog.png) | Duplicate IDs found, and fixed |
-| Checkout | n/a | ![screenshot](documentation/html-validation-checkout.png) | Pass: No Errors |
-| x | x | x | repeat for all remaining HTML files |
-
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
-**IMPORTANT**: Python/Jinja syntax in HTML
-
-Python projects that use Jinja syntax, such as `{% for loops %}`, `{% url 'home' %}`, and `{{ variable|filter }}`
-will not validate properly if you're copying/pasting into the HTML validator.
-
-In order to properly validate these types of files, it's recommended to
-[validate by uri](https://validator.w3.org/#validate_by_uri) from the deployed Heroku pages.
+| Home | [W3C](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fsoundburger.herokuapp.com%2F) | ![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/testing/html-home.png) | Pass: No Errors |
+| Menu | [W3C](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fsoundburger.herokuapp.com%2Fmenu%2F) | ![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/testing/html-menu.png) | Pass: No Errors |
+| Cart | [W3C](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fsoundburger.herokuapp.com%2Fcart%2F) | ![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/testing/html-cart.png) | Pass: No Errors |
+| Checkout | [W3C](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fsoundburger.herokuapp.com%2Fcheckout%2F) | ![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/testing/html-checkout.png) | Pass: No Errors |
+| Reviews | [W3C](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fsoundburger.herokuapp.com%2Freviews%2F) | ![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/testing/html-reviews.png) | Pass: No Errors |
+| Add Review | [W3C](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fsoundburger.herokuapp.com%2Fadd%2F) | ![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/testing/html-add.png) | Pass: No Errors |
+| Edit Review | [W3C](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fsoundburger.herokuapp.com%2Fedit%2F) | ![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/testing/html-edit.png) | Pass: No Errors |
+| Signup | [W3C](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fsoundburger.herokuapp.com%2Faccounts%2Fsignup%2F) | ![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/testing/html-signup.png) | Pass: No Errors |
+| Signin | [W3C](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fsoundburger.herokuapp.com%2Faccounts%2Flogin%2F) | ![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/testing/html-login.png) | Pass: No Errors |
+| Signout | [W3C](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fsoundburger.herokuapp.com%2Faccounts%2Flogout%2F) | ![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/testing/html-logout.png) | Pass: No Errors |
 
 Unfortunately, pages that require a user to be logged-in and authenticated (CRUD functionality),
 will not work using this method, due to the fact that the HTML Validator (W3C) doesn't have
@@ -62,8 +29,6 @@ In order to properly validate HTML pages with Jinja syntax for authenticated pag
 - This will display the entire "compiled" code, without any Jinja syntax.
 - Copy everything, and use the [validate by input](https://validator.w3.org/#validate_by_input) method.
 - Repeat this process for every page that requires a user to be logged-in/authenticated.
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
 
 ### CSS
 
