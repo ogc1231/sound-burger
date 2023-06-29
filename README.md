@@ -140,21 +140,6 @@ I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wirefram
 
 ## Features
 
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
-In this section, you should go over the different parts of your project,
-and describe each in a sentence or so.
-
-You will need to explain what value each of the features provides for the user,
-focusing on who this website is for, what it is that they want to achieve,
-and how your project is the best way to help them achieve these things.
-
-For some/all of your features, you may choose to reference the specific project files that implement them.
-
-IMPORTANT: Remember to always include a screenshot of each individual feature!
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
 ### Existing Features
 
 - **Home Page**
@@ -458,11 +443,11 @@ class Review(models.Model):
 
 ### GitHub Projects
 
-[GitHub Projects](https://github.com/ogc1231/sound-burger/projects) served as an Agile tool for this project.
+[GitHub Projects](https://github.com/users/ogc1231/projects/4) served as an Agile tool for this project.
 
 Through it, user stories, issues, and milestone tasks were planned, then tracked on a weekly basis using the basic Kanban board.
 
-![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/images/projectboard.PNG)
+![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/screenshots/projectboard.PNG)
 
 ### GitHub Issues
 
