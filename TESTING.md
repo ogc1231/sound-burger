@@ -6,6 +6,17 @@
 
 I have used the recommended [HTML W3C Validator](https://validator.w3.org) to validate all of my HTML files.
 
+Unfortunately, pages that require a user to be logged-in and authenticated (CRUD functionality),
+will not work using this method, due to the fact that the HTML Validator (W3C) doesn't have
+access to login to your pages.
+
+In order to properly validate HTML pages with Jinja syntax for authenticated pages, follow these steps:
+
+- Navigate to the deployed pages which require authentication
+- Right-click anywhere on the page, and select **View Page Source** (usually `CTRL+U` or `⌘+U` on Mac).
+- This will display the entire "compiled" code, without any Jinja syntax.
+- Copy everything, and use the [validate by input](https://validator.w3.org/#validate_by_input) method.
+
 | Page | W3C URL | Screenshot | Notes |
 | --- | --- | --- | --- |
 | Home | [W3C](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fsoundburger.herokuapp.com%2F) | ![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/testing/html-home.png) | Pass: No Errors |
@@ -18,17 +29,6 @@ I have used the recommended [HTML W3C Validator](https://validator.w3.org) to va
 | Signup | [W3C](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fsoundburger.herokuapp.com%2Faccounts%2Fsignup%2F) | ![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/testing/html-signup.png) | Pass: No Errors |
 | Signin | [W3C](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fsoundburger.herokuapp.com%2Faccounts%2Flogin%2F) | ![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/testing/html-login.png) | Pass: No Errors |
 | Signout | [W3C](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fsoundburger.herokuapp.com%2Faccounts%2Flogout%2F) | ![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/testing/html-logout.png) | Pass: No Errors |
-
-Unfortunately, pages that require a user to be logged-in and authenticated (CRUD functionality),
-will not work using this method, due to the fact that the HTML Validator (W3C) doesn't have
-access to login to your pages.
-In order to properly validate HTML pages with Jinja syntax for authenticated pages, follow these steps:
-
-- Navigate to the deployed pages which require authentication
-- Right-click anywhere on the page, and select **View Page Source** (usually `CTRL+U` or `⌘+U` on Mac).
-- This will display the entire "compiled" code, without any Jinja syntax.
-- Copy everything, and use the [validate by input](https://validator.w3.org/#validate_by_input) method.
-- Repeat this process for every page that requires a user to be logged-in/authenticated.
 
 ### CSS
 
