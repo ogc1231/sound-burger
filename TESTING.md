@@ -34,9 +34,11 @@ In order to properly validate HTML pages with Jinja syntax for authenticated pag
 
 I used the recommended [CSS Jigsaw Validator](https://jigsaw.w3.org/css-validator) to validate my CSS files, style.css was validated with no errors found.
 
+The css was copied from style.css and pasted directly into the validator and shows no errors. However When the live site link was used the validator showed parse errors caused by Boostrap, Bulma and Fontawesome.
+
 | File | Jigsaw URL | Screenshot | Notes |
 | --- | --- | --- | --- |
-| style.css | [Jigsaw](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fogc1231.github.io%2Fsound-burger) | ![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/testing/css-jigsaw-validator.png) | Pass: No Errors |
+| style.css | [Jigsaw](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fsoundburger.herokuapp.com%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en) | ![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/testing/css-jigsaw-validator.png) | Pass: No Errors when css pasted in directly |
 
 ### Python
 
