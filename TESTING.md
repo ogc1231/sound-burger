@@ -375,10 +375,12 @@ All previously closed/fixed bugs can be tracked [here](https://github.com/ogc123
 
 Any remaining open issues can be tracked [here](https://github.com/ogc1231/sound-burger/issues).
 
-| Bug | Status |
+| Issue | Status |
 | --- | --- |
-| [JS `'let'` or `'const'` or `'template literal syntax'` or `'arrow function syntax (=>)'` is available in ES6 (use `'esversion: 11'`) or Mozilla JS extensions (use moz).](https://github.com/ogc1231/sound-burger/issues/4) | Open |
-| [Python `E501 line too long` (93 > 79 characters)](https://github.com/ogc1231/sound-burger/issues/5) | Open |
+| [USER STORY: Can view contact info of SoundBurger](https://github.com/ogc1231/sound-burger/issues/68) | Open |
+| [USER STORY: Choose to pickup order](https://github.com/ogc1231/sound-burger/issues/59) | Open |
+| [USER STORY: Reset password](https://github.com/ogc1231/sound-burger/issues/58) | Open |
+| [USER STORY: Delete account](https://github.com/ogc1231/sound-burger/issues/57) | Open |
 
 ## Unfixed Bugs
 
