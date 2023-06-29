@@ -8,7 +8,7 @@ I have used the recommended [HTML W3C Validator](https://validator.w3.org) to va
 
 Unfortunately, pages that require a user to be logged-in and authenticated (CRUD functionality),
 will not work using this method, due to the fact that the HTML Validator (W3C) doesn't have
-access to login to your pages.
+access to login to those pages.
 
 In order to properly validate HTML pages with Jinja syntax for authenticated pages, follow these steps:
 
@@ -34,7 +34,7 @@ In order to properly validate HTML pages with Jinja syntax for authenticated pag
 
 I used the recommended [CSS Jigsaw Validator](https://jigsaw.w3.org/css-validator) to validate my CSS files, style.css was validated with no errors found.
 
-The css was copied from style.css and pasted directly into the validator and shows no errors. However When the live site link was used the validator showed parse errors caused by Boostrap, Bulma and Fontawesome.
+The css was copied from style.css and pasted directly into the validator and shows no errors. However when the live site link was used the validator showed parse errors caused by Boostrap, Bulma and Fontawesome.
 
 | File | Jigsaw URL | Screenshot | Notes |
 | --- | --- | --- | --- |
@@ -88,7 +88,7 @@ I've tested my deployed project on multiple devices to check for responsiveness 
 
 ## Lighthouse Audit
 
-The deployed project was tested using the Lighthouse Audit tool to check for any major issues.
+The deployed project was tested using the Lighthouse Audit tool to check for any major issues. The homepage has a slight performane dip on mobile which could solved by using smaller image file for the hero section.
 
 | Page | Size | Screenshot | Notes |
 | --- | --- | --- | --- |
@@ -241,7 +241,7 @@ There are no more remaining bugs that I am aware of.
 
     ![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/testing/bug-3.png)
 
-    - Fixed by change Quanity to Qty in cart and reduce font-size on mobile only for cart table
+    - Fixed by changing Quanity to Qty in cart and reducing font-size on mobile only for cart table
 
 ### GitHub **Issues**
 

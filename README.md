@@ -1,6 +1,6 @@
 # SOUND BURGER
 
-This is the website for SoundBurger, a burger delivery only resturant based in Dublin, Ireland. The aim of the website is to allow users to create an account and order food from am updateable menu which can be added to a cart, checkedout and delivered to their address. It also functions as place where users can leave reviews about their experinces with SoundBurger, the food and the service. 
+This is the website for SoundBurger, a burger delivery only resturant based in Dublin, Ireland. The aim of the website is to allow users to create an account and order food from an updatable menu which can be added to a cart, checked out and delivered to their address. It also functions as place where users can leave reviews about their experinces with SoundBurger, the food and the service. 
 
 The website aim was to build a fullstack website with CRUD functionality using the Django framework and agile methodologies.
 
@@ -78,7 +78,8 @@ I used [coolors.co](https://coolors.co/f14668-ffe08a-3e8ed0-48c78e-00d1b2-4a4a4a
 
 ## Wireframes
 
-To follow best practice, wireframes were developed for mobile, tablet, and desktop sizes.
+To follow best practice, wireframes were developed for mobile and desktop sizes to act as a design guide for the website.
+
 I've used [Mockitt](https://mockitt.wondershare.com) to design my site wireframes.
 
 ### Home Page Wireframes
@@ -137,13 +138,13 @@ I've used [Mockitt](https://mockitt.wondershare.com) to design my site wireframe
 
 - **Home Page**
 
-    - This is where the user will be brought to when first entering the website. The user eyes will be drawn to the hero section and order now call to action, from the homepage user has access to the required pages such as menu, reviews, login and signup pages.
+    - This is where the user will be brought to when first entering the website. The users eyes will be drawn to the hero section and the order now call to action, from the homepage a new user has access to the pages that don't require authentication such as menu, reviews, login and signup pages.
 
 ![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/screenshots/homepage.png)
 
 - **Home Page Logged In**
 
-    - Same as homepage except now the user can logout of their account and had access the cart which is available for logged in users only.
+    - Same as the homepage except now the user can logout of their account and has access the cart which is available for logged in users only.
 
 ![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/screenshots/homepage-loggedin.png)
 
@@ -185,7 +186,7 @@ I've used [Mockitt](https://mockitt.wondershare.com) to design my site wireframe
 
 - **Reviews Page Logged In**
 
-    - User will see option to add a review or edit/delete a review if they have already posted a review.
+    - User will see option to add a review or edit/delete a review only if they have already posted a review.
 
 ![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/screenshots/review-page-loggedin.png)
 
@@ -197,13 +198,13 @@ I've used [Mockitt](https://mockitt.wondershare.com) to design my site wireframe
 
 - **Edit Review Page**
 
-    - If user have prevousily left a review they can edit the review by clicking the edit button on their review. They can then choose to post the updates or cancel the update.
+    - If user have previously left a review they can edit the review by clicking the edit button on their review. They can then choose to post the update or cancel the update.
 
 ![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/screenshots/edit-review-page.png)
 
 - **Delete Review Confirmation Modal**
 
-    - User can delete prevousily posted review by clicking the delete button the review, a modal will appear confirming user wants to the delete the review, they can confirm delete or cancel so review is not deleted.
+    - User can delete previously posted review by clicking the delete button on the review, a modal will appear confirming the user wants to the delete the review, they can confirm deletion or cancel so the review it is not deleted.
 
 ![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/screenshots/message-delete.png)
 
@@ -221,7 +222,7 @@ I've used [Mockitt](https://mockitt.wondershare.com) to design my site wireframe
 
 - **Logout Page**
 
-    - Users can logout of their accounts when they want, signout must confirmed before signout in completed.
+    - Users can logout of their accounts when they want, signout must confirmed before signout is completed.
 
 ![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/screenshots/signout-page.png)
 
@@ -251,13 +252,13 @@ I've used [Mockitt](https://mockitt.wondershare.com) to design my site wireframe
 
 - **Order Complete Message**
 
-    - Message appears when user correctly entered shipping address and clciked confirm order button.
+    - Message appears when user correctly enters shipping address and clicked confirm order button.
 
 ![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/screenshots/message-complete.png)
 
 - **Navbar**
 
-    - Links to all main pages users need access to, logged in user will see the basket and logout link/button, while new users will not see the basket and instead of logout will see signup and login buttons.
+    - Links to all main pages users need access to, logged in users will see the basket and logout link/button, while new users will not see the basket and instead of logout will see signup and login buttons.
 
 ![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/screenshots/navbar-full.png)
 
@@ -279,7 +280,7 @@ I've used [Mockitt](https://mockitt.wondershare.com) to design my site wireframe
 - Reset Password
     - User can reset their password.
 - Delivery Tracking
-    - User can track order on the website, including cooking and delievry updates via website, email & text.
+    - User can track their order on the website, including cooking and delivery updates via website, email & text.
 - Delete Account
     - User can delete their own account if needed.
 - About Page
