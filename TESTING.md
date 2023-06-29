@@ -212,7 +212,6 @@ from the respective feature.
 | As a authenticated user I can logout of my account so that my data is safe.| ![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/testing/user-7.png) |
 | As a authenticated user I can view add to cart buttons so that I can add food to cart. | ![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/testing/user-8.png) |
 | As a authenticated user I can edit/update my reviews so that change my reviews in case of grammar/spelling mistakes or to add extra information. | ![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/testing/user-9.png) |
-
 | As a authenticated user I can delete reviews I have written so that my reviews are deleted and able to be seen by anyone visiting the webpage. | ![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/testing/user-10.png) |
 | As a authenticated user I can access my cart so that I can see a list of all the items I have in my cart. | ![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/testing/user-11.png) |
 | As a authenticated user I can view the quantity of each item I have added to my cart so that so I know I have added to many or few items of each type selected.  | ![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/testing/user-12.png) |
@@ -222,7 +221,6 @@ from the respective feature.
 | As a authenticated user I can view the total quantity of items in my cart from any page so that I always know how many items are in my cart. | ![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/testing/user-16.png) |
 | As a authenticated user I can easily continue shopping when in the cart so that add more items to my cart.  | ![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/testing/user-17.png) |
 | As a authenticated user I can easily return to cart when in checkout so that so that I can adjust my order.  | ![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/testing/user-18.png) |
-
 | As a authenticated user I must confirm deletion of review so that I make sure I actually want to delete it and not just delete it by mistake. | ![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/testing/user-19.png) |
 | As a authenticated user I can cancel updating my review so that I don't have change my review if I decide I don't need to. | ![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/testing/user-20.png) |
 | As a authenticated user I can see order complete message so that I know my order has been made. | ![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/testing/user-21.png) |
