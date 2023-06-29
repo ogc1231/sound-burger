@@ -86,7 +86,6 @@ I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wirefram
 | Size | Screenshot |
 | --- | --- |
 | Mobile | ![screenshot](documentation/wireframes/mobile-home.png) |
-| Tablet | ![screenshot](documentation/wireframes/tablet-home.png) |
 | Desktop | ![screenshot](documentation/wireframes/desktop-home.png) |
 
 ### Menu Page Wireframes
@@ -94,7 +93,6 @@ I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wirefram
 | Size | Screenshot |
 | --- | --- |
 | Mobile | ![screenshot](documentation/wireframes/mobile-about.png) |
-| Tablet | ![screenshot](documentation/wireframes/tablet-about.png) |
 | Desktop | ![screenshot](documentation/wireframes/desktop-about.png) |
 
 ### Review Page Wireframes
@@ -102,7 +100,6 @@ I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wirefram
 | Size | Screenshot |
 | --- | --- |
 | Mobile | ![screenshot](documentation/wireframes/mobile-contact.png) |
-| Tablet | ![screenshot](documentation/wireframes/tablet-contact.png) |
 | Desktop | ![screenshot](documentation/wireframes/desktop-contact.png) |
 
 ### Add Review Page Wireframes
@@ -110,7 +107,6 @@ I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wirefram
 | Size | Screenshot |
 | --- | --- |
 | Mobile | ![screenshot](documentation/wireframes/mobile-contact.png) |
-| Tablet | ![screenshot](documentation/wireframes/tablet-contact.png) |
 | Desktop | ![screenshot](documentation/wireframes/desktop-contact.png) |
 
 ### Edit Review Page Wireframes
@@ -118,7 +114,6 @@ I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wirefram
 | Size | Screenshot |
 | --- | --- |
 | Mobile | ![screenshot](documentation/wireframes/mobile-contact.png) |
-| Tablet | ![screenshot](documentation/wireframes/tablet-contact.png) |
 | Desktop | ![screenshot](documentation/wireframes/desktop-contact.png) |
 
 
@@ -130,7 +125,7 @@ I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wirefram
 | Tablet | ![screenshot](documentation/wireframes/tablet-contact.png) |
 | Desktop | ![screenshot](documentation/wireframes/desktop-contact.png) |
 
-### Ckeckout Page Wireframes
+### Checkout Page Wireframes
 
 | Size | Screenshot |
 | --- | --- |
