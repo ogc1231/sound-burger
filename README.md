@@ -312,6 +312,8 @@ IMPORTANT: Remember to always include a screenshot of each individual feature!
     - User can at a press of button reorder a previously placed order.
 - Contact information
     - Add contact information to the site.
+- Dark Mode
+    - User can switch between normal and dark colour schemes based on preference.
 
 ## Tools & Technologies Used
 
