@@ -335,8 +335,42 @@ Any remaining open issues can be tracked [here](https://github.com/ogc1231/sound
 
 | Issue | Status |
 | --- | --- |
+| [STYLING: Style Add Review page](https://github.com/ogc1231/sound-burger/issues/55) | Closed |
+| [STYLING: Style Edit Review page](https://github.com/ogc1231/sound-burger/issues/54) | Closed |
+| [STYLING: Style Reviews page](https://github.com/ogc1231/sound-burger/issues/53) | Closed |
+| [STYLING: Style Cart & Checkout page](https://github.com/ogc1231/sound-burger/issues/51) | Closed |
+| [STYLING: Style Menu page](https://github.com/ogc1231/sound-burger/issues/50) | Closed |
+| [STYLING: Style Homepage](https://github.com/ogc1231/sound-burger/issues/49) | Closed |
+| [SETUP: Install Django](https://github.com/ogc1231/sound-burger/issues/1) | Closed |
+| [SETUP: Install psycopg2](https://github.com/ogc1231/sound-burger/issues/2) | Closed |
+| [SETUP: Install Cloudinary](https://github.com/ogc1231/sound-burger/issues/3) | Closed |
+| [SETUP: Create Project (soundburger)](https://github.com/ogc1231/sound-burger/issues/4) | Closed |
+| [SETUP: Deploy to Heroku](https://github.com/ogc1231/sound-burger/issues/6) | Closed |
+| [SETUP: Create ElephantSQL account](https://github.com/ogc1231/sound-burger/issues/7) | Closed |
+| [SETUP: Create required folders and files](https://github.com/ogc1231/sound-burger/issues/8) | Closed |
+| [SETUP: Create Admin Super User](https://github.com/ogc1231/sound-burger/issues/9) | Closed |
+| [SETUP: Link Bootstrap](https://github.com/ogc1231/sound-burger/issues/14) | Closed |
+| [SETUP: Link Bulma CSS](https://github.com/ogc1231/sound-burger/issues/15) | Closed |
+| [SETUP: Install Summernote](https://github.com/ogc1231/sound-burger/issues/16) | Closed |
+| [SETUP: Install AllAuth](https://github.com/ogc1231/sound-burger/issues/17) | Closed |
+| [SETUP: Install Pillow](https://github.com/ogc1231/sound-burger/issues/23) | Closed |
+| [SETUP: Create Burger Model](https://github.com/ogc1231/sound-burger/issues/24) | Closed |
+| [SETUP: Create Drink Model](https://github.com/ogc1231/sound-burger/issues/25) | Closed |
+| [SETUP: Create Side model](https://github.com/ogc1231/sound-burger/issues/26) | Closed |
+| [SETUP: Install Crispy Forms](https://github.com/ogc1231/sound-burger/issues/27) | Closed |
+| [SETUP: Create Reviews App](https://github.com/ogc1231/sound-burger/issues/28) | Closed |
+| [SETUP: Create Home App](https://github.com/ogc1231/sound-burger/issues/47) | Closed |
+| [SETUP: Create Menu App](https://github.com/ogc1231/sound-burger/issues/48) | Closed |
+| [SETUP: Convert burger, side & drink models into one group model](https://github.com/ogc1231/sound-burger/issues/30) | Closed |
+| [DOCUMENTATION & TESTING: Add README.md template](https://github.com/ogc1231/sound-burger/issues/11) | Closed |
+| [DOCUMENTATION & TESTING: Create TESTING.md](https://github.com/ogc1231/sound-burger/issues/10) | Closed |
+| [DOCUMENTATION & TESTING: Complete TESTING.md](https://github.com/ogc1231/sound-burger/issues/32) | Closed |
+| [DOCUMENTATION & TESTING: Complete README.md](https://github.com/ogc1231/sound-burger/issues/31) | Closed |
 
 **Milestones**
+
+Milestones were used to break the development down into small managable chunks focusing on the most important elements first.
+
 | Milestone | Status |
 | --- | --- |
 | [MVP Release](https://github.com/ogc1231/sound-burger/milestone/1) | Closed |
