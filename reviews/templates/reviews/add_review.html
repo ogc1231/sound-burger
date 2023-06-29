@@ -9,7 +9,7 @@
 <section class="container columns mx-auto">
     <div class="column is-one-third mx-auto">
         <h3 class="title is-size-3">Write Your Review</h3>
-        <form method="POST" action="">
+        <form method="POST">
             {% csrf_token %}
             {{ form|crispy }}
 
