@@ -353,6 +353,8 @@ Any remaining open issues can be tracked [here](https://github.com/ogc1231/sound
 | [USER STORY: Choose to pickup order](https://github.com/ogc1231/sound-burger/issues/59) | Open |
 | [USER STORY: Reset password](https://github.com/ogc1231/sound-burger/issues/58) | Open |
 | [USER STORY: Delete account](https://github.com/ogc1231/sound-burger/issues/57) | Open |
+| [BUG: Incorrect times on reviews](https://github.com/ogc1231/sound-burger/issues/69) | Open |
+| [BUG: Checkout page should be in two columns Shipping Address & Order Summary NOT two rows](https://github.com/ogc1231/sound-burger/issues/70) | Open |
 
 ## Unfixed Bugs
 
@@ -362,9 +364,9 @@ Any remaining open issues can be tracked [here](https://github.com/ogc1231/sound
 
     - Attempted to fix by adding "F d, Y @ H:m" form to updated & created times with no luck.
 
-- BUG: Checkout page should in two columns Shipping Address & Order Summary NOT two rows.
+- BUG: Checkout page should be in two columns Shipping Address & Order Summary NOT two rows
 
-    ![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/testing/bug.PNG)
+    ![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/testing/bug-2.png)
 
     - Attempted to fix by adding flexbox to no result.
 
