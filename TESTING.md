@@ -124,8 +124,10 @@ I've tested my deployed project on multiple devices to check for responsiveness 
 | Mobile (DevTools) | ![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/testing/mobile-menu-open.png) | Works as expected |
 | Tablet (DevTools) | ![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/testing/tablet-checkout.png) | Works as expected |
 | Tablet (DevTools) | ![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/testing/tablet-menu-open.png) | Works as expected |
-| Desktop | ![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/testing/laptop-reviews.png) | Works as expected |
-| XL Monitor | ![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/testing/xl-monitor-home.png) | Scaling starts to have minor issues with font sizes |
+| Razer Blade 15 | ![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/testing/laptop-reviews.png) | Works as expected |
+| Razer Blade 15 | ![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/testing/laptop-menu.png) | Works as expected |
+| 2k Monitor | ![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/testing/xl-monitor-home.png) | Scaling starts to have minor issues with font sizes |
+| 2k Monitor | ![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/testing/xl-monitor-menu.png) | Scaling starts to have minor issues with font sizes |
 
 
 ## Lighthouse Audit
