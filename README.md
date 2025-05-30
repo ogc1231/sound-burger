@@ -4,8 +4,6 @@ This is the website for SoundBurger, a burger delivery only resturant based in D
 
 The website aim was to build a fullstack website with CRUD functionality using the Django framework and agile methodologies.
 
-[Live link to website](https://soundburger.herokuapp.com/)
-
 ![screenshot](https://github.com/ogc1231/sound-burger/blob/main/documentation/screenshots/mockup.PNG)
 
 ## UX
